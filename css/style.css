@@ -1,28 +1,4 @@
-/*基礎css*/
-/*
-    RWD1024_up.css
-        1024up
-        1024px~1366px 橫式 iPad Pro in landscape
-        1024px~1366px 直式 iPad Pro in portrait
-    RWD768_up.css
-        991px down
-        768px~1024px 直式 iPad in portrait
-        768px~1024px 橫式 iPad in landscape
-    RWD767_down.css
-        480~768
-        320~480  通用 ========================= 手機
-        320down  通用 ========================= 小型手機
-    RWD_special.css
-        直式-
-            320px~568px iPhone 5 & 5S portrait直式
-            375px~667px iPhone 6 portrait直式
-        橫式- 320~812
-            320px~480px iPhone 4 landscape橫式
-            320px~568px iPhone 5 & 5S landscape橫式
-            375px~667px iPhone 6 landscape橫式
-            375px~812px iphone X 橫式
-            414px~736px *iPhone 6 plus landscape橫式
-*/
+@import "animate.css";
 /* 共用 */
 * {
     -webkit-box-sizing: border-box;
@@ -199,6 +175,11 @@ body{
     padding: 0;
 }
 /*頁首*/
+.pushy-open-right #mainNav{
+    -webkit-transform: translate3d(-200px, 0, 0);
+    -ms-transform: translate3d(-200px, 0, 0);
+    transform: translate3d(-200px, 0, 0);
+}
 #mainNav {
     border-color: transparent;
     background-color: transparent;
@@ -324,6 +305,9 @@ footer a:hover{
 }
 .cart,.phone-cart{
     position: relative;
+    cursor: pointer;
+    -webkit-animation-duration: 0.3s;
+    animation-duration: 0.3s;
 }
 .icon_cart{
     background: url("../image/index/cart.png")no-repeat;
@@ -334,8 +318,8 @@ footer a:hover{
 }
 .cart span{
     position: absolute;
-    top: -.5em;
-    right: 1.5em;
+    top: 0;
+    right: 0;
     padding: 0 .5em;
     border-radius: 9px;
     background-color: #856404;
@@ -345,8 +329,8 @@ footer a:hover{
 }
 .phone-cart span{
     position: absolute;
-    top: -.5em;
-    right: .5em;
+    top: 0;
+    right: 0;
     padding: 0 .5em;
     border-radius: 9px;
     background-color: #856404;

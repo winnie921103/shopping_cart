@@ -19,34 +19,8 @@
 
 </head>
 <body class="index">
-<!-- Navigation -->
-<nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
-    <div class="container">
-        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-            <i class="fas fa-bars"></i>
-        </button>
-        <a class="navbar-brand js-scroll-trigger" href="index.html"><img src="image/index/logo2.svg" width="180" alt="logo"></a>
-        <a href="page/cart.html" class="phone-cart"><div class="icon_cart"></div><span>0</span></a>
-        <div class="collapse navbar-collapse" id="navbarResponsive">
-            <ul class="navbar-nav ml-auto">
-                <li class="nav-item">
-                    <a class="nav-link" href="index.html">首頁</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="page/shop.html">線上購物</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="page/login.html"><i class="far fa-user"></i>會員專區</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link cart" href="page/cart.html"><div class="icon_cart"></div><span>0</span></a>
-                </li>
-            </ul>
-        </div>
-    </div>
-</nav>
 <!-- Pushy Menu -->
-<nav class="pushy pushy-left">
+<nav class="pushy pushy-right">
     <div class="pushy-content">
         <div class="top">
             <div>demo</div>
@@ -68,6 +42,37 @@
         </ul>
     </div>
 </nav>
+<!-- Site Overlay -->
+<div class="site-overlay"></div>
+<!-- content -->
+<div class="page-wrapper">
+<!-- Navigation -->
+<nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+    <div class="container">
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="fas fa-bars"></i>
+        </button>
+        <a class="navbar-brand js-scroll-trigger" href="index.html"><img src="image/index/logo2.svg" width="180" alt="logo"></a>
+        <span class="phone-cart menu-btn"><div class="icon_cart"></div><span>0</span></span>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">首頁</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="page/shop.html">線上購物</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="page/login.html"><i class="far fa-user"></i>會員專區</a>
+                </li>
+                <li class="nav-item">
+                    <span class="nav-link cart menu-btn" ><div class="icon_cart"></div><span>0</span></span>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
 <!--輪播-->
 <header class="banner">
     <div class="container-fluid">
@@ -244,6 +249,7 @@
         <div class="bottom">Copyright © 2020 騰璽國際股份有限公司 <span>All Rights Reserved.</span></div>
     </div>
 </footer>
+</div>
 <!--JS -->
 <script type="text/javascript" src="plugins/jquery/jquery-3.4.1.min.js"></script>
 <script type="text/javascript" src="plugins/jquery/jquery.easing.min.js"></script>

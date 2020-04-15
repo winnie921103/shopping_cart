@@ -39,15 +39,10 @@
         });
 
         /*main_btn 主選單*/
-        $(".main_btn").click(function(){
-            var subMenu = $(this).find(".sub_menu").hasClass("sub_menu");
-            if(subMenu == true){
-                $(this).find(".sub_menu").toggleClass("none");
-            }else{
-                $(this).addClass("active").siblings().removeClass("active");
-            }
-        })
+        function shake() {
 
+                $(".cart,.phone-cart").addClass("shake");
+        }
         /*checkbox*/
         $(".checkboxAll").click(function(){
             console.log($(this).hasClass("checked"))
