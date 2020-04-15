@@ -91,7 +91,7 @@ body{
     animation: fadeInDown 1.2s both 1s;
 }
 .text .title{
-    font-size: 72px;
+    font-size: 4em;
     font-family: 'Noto Serif TC',sans-serif;
     letter-spacing: 0.25em;
     margin-bottom: 0;
@@ -224,9 +224,7 @@ body{
     margin-right: 10px;
     bottom: 0;
 }
-#mainNav .phone-cart {
-    display: none;
-}
+
 #mainNav .navbar-nav>li.nav-item>a.nav-link, #mainNav .navbar-nav>li.nav-item>a.nav-link:focus {
     color: #B79C61;
 }
@@ -320,7 +318,11 @@ footer a:hover{
     margin: 10px 0;
 }
 /*購物車*/
-.cart{
+#mainNav .phone-cart {
+    display: none;
+    padding-right: 1em;
+}
+.cart,.phone-cart{
     position: relative;
 }
 .icon_cart{
@@ -334,6 +336,17 @@ footer a:hover{
     position: absolute;
     top: -.5em;
     right: 1.5em;
+    padding: 0 .5em;
+    border-radius: 9px;
+    background-color: #856404;
+    color: #fff;
+    font-size: .75rem;
+    line-height: 18px;
+}
+.phone-cart span{
+    position: absolute;
+    top: -.5em;
+    right: .5em;
     padding: 0 .5em;
     border-radius: 9px;
     background-color: #856404;
@@ -429,8 +442,6 @@ footer a:hover{
     100% {top:20px}
 }
 .shop .con .bio {
-    /*border-right: 1px #f6f6f6 solid;*/
-    /*border-left: 1px #f6f6f6 solid;*/
     background: #e8e2d5;
 }
 .shop .con .bio span {
@@ -438,18 +449,14 @@ footer a:hover{
     font-size: 1.2em;
     padding: 10px 0;
     color: #625434;
+    width: 100%;
 }
-.shop .con .bio span:nth-child(1) {
-    -webkit-box-flex: 10;
-    -ms-flex: 10;
-    flex: 10;
-    border-right: 1px #fff solid;
-}
-.shop .con .bio span:nth-child(2),.shop .con .bio span:nth-child(3) {
-    -webkit-box-flex: 3;
-    -ms-flex: 3;
-    flex: 3;
+.shop .price{
+    width: 100%;
+    text-align: center;
     font-weight: bold;
+    padding: 10px;
+    border-top: 1px solid #f1ebe0;
 }
 .shop .con button {
     width: 100%;
@@ -506,6 +513,28 @@ footer a:hover{
 
 /*通用 ========================= 平板以下 (手機、平板)*/
 @media only screen and (max-width : 767px){
+    #mainNav .navbar-nav>li.nav-item>a.nav-link, #mainNav .navbar-nav>li.nav-item>a.nav-link:focus{
+        text-align: center;
+        font-size: 1.2em;
+    }
+    #mainNav .phone-cart {
+        display: block;
+    }
+    #mainNav .cart {
+        display: none;
+    }
+    .join .subtitle{
+        font-size: 1em;
+    }
+    .text{
+        width: 90%;
+    }
+    .text .title{
+        font-size: 1.5em;
+    }
+    .text .p{
+        font-size: 1em;
+    }
     .shop .con .con-pic {
         height: 315px;
     }
