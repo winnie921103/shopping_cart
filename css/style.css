@@ -84,7 +84,7 @@ body{
     opacity: 1;
     -webkit-animation: fadeInUp 1.2s both 1s;
     animation: fadeInUp 1.2s both 1s;
- }
+}
 .slick-active .text .p{
     opacity: 1;
     -webkit-animation: fadeInDown 1.2s both 1s;
@@ -238,16 +238,109 @@ body{
     font-weight: 700;
     text-transform: uppercase;
     color: #212529;
+    line-height: 2em;
 }
 /*頁尾*/
 footer{
     background: url("../image/index/sale-bg.png")no-repeat center;
     -webkit-background-size: cover;
     background-size: cover;
+    height: 10em;
+    padding: 0 10px;
+    color: #bbb;
+    text-align: center;
+    display: flex;
+}
+footer .container-fluid{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+footer .top{
+    width: 65%;
+    text-align: left;
+    border-bottom: 1px solid rgba(213, 197, 138, 0.3);
+    display: flex;
+    align-items: center;
     height: 5em;
-    padding: 10px;
+}
+footer .bottom{
+    width: 65%;
+    text-align: left;
+}
+footer i{
+    margin-right: 10px;
+}
+footer a {
+    color: #fff;
+    text-decoration: none;
+    margin-right: 2em;
+}
+footer a:hover{
+    text-decoration: none;
+    color:#B79C61;
+    -webkit-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out;
+}
+/*聯盟*/
+.join {
+    text-align: center;
+    padding: 5em 0;
+    background: url("../image/index/activity-bg.png")no-repeat center;
+    -webkit-background-size: cover;
+    background-size: cover;
+    color: #fff;
+}
+.join .bottom {
+    width: 15em;
+    margin: 2em auto;
+}
+.join .bottom li{
+    list-style: decimal;
+}
+.join .title{
+    font-size: 2em;
+}
+.join .subtitle{
+    font-size: 1.5em;
+    margin: 2em 0;
+}
+.join .p{
+    text-align: left;
+    font-size: 1em;
+}
+.join .btn{
+    color: #fff;
+    background: #b79c61;
+    padding: 10px 50px;
+    font-size: 1.2em;
+}
+.join ul li{
+    margin: 10px 0;
 }
 /*購物車*/
+.cart{
+    position: relative;
+}
+.icon_cart{
+    background: url("../image/index/cart.png")no-repeat;
+    background-size: 100% auto;
+    width: 32px;
+    height: 32px;
+    position: relative;
+}
+.cart span{
+    position: absolute;
+    top: -.5em;
+    right: 1.5em;
+    padding: 0 .5em;
+    border-radius: 9px;
+    background-color: #856404;
+    color: #fff;
+    font-size: .75rem;
+    line-height: 18px;
+}
 .shop .con {
     padding-bottom: 50px;
 }
@@ -268,21 +361,36 @@ footer{
     -webkit-transition: all .2s ease-in-out;
     transition: all .2s ease-in-out;
 }
- .shop .con .con-pic.new::before {
-     content: "本日精選";
-     position: absolute;
-     background-color: #B79C61;
-     -webkit-writing-mode: vertical-rl;
-     writing-mode: vertical-rl;
-     left: 5px;
-     top: 0px;
-     font-size: 16px;
-     color: rgb(255, 255, 255);
-     letter-spacing: 5px;
-     font-family: "Microsoft JhengHei", serif;
-     z-index: 2;
-     padding: 10px 5px;
- }
+.shop .con .con-pic.new::before {
+    content: "本日精選";
+    position: absolute;
+    background-color: #B79C61;
+    -webkit-writing-mode: vertical-rl;
+    writing-mode: vertical-rl;
+    left: 5px;
+    top: 0px;
+    font-size: 16px;
+    color: rgb(255, 255, 255);
+    letter-spacing: 5px;
+    font-family: "Microsoft JhengHei", serif;
+    z-index: 2;
+    padding: 10px 5px;
+}
+.shop.new-product .con .con-pic.new::before {
+    content: "最新商品";
+    position: absolute;
+    background-color: #dc3545;
+    -webkit-writing-mode: vertical-rl;
+    writing-mode: vertical-rl;
+    left: 5px;
+    top: 0px;
+    font-size: 16px;
+    color: rgb(255, 255, 255);
+    letter-spacing: 5px;
+    font-family: "Microsoft JhengHei", serif;
+    z-index: 2;
+    padding: 10px 5px;
+}
 .shop .con:hover .con-pic::after {
     opacity: 1;
 }
@@ -348,12 +456,16 @@ footer{
     background-color: #e6d7b3;
     color: #ae8429;
     font-size: 1.2em;
-    padding: 10px 0;
+    padding: 15px 0;
     font-weight: bold;
     border: none;
     -webkit-transition: all .2s ease-in-out;
     transition: all .2s ease-in-out;
     cursor: pointer;
+    outline: none;
+}
+.shop .con i{
+    margin-right: 1em;
 }
 .shop .con button:hover {
     background-color: #ae8429;
@@ -365,9 +477,12 @@ footer{
 .shop .con .bio .sale{
     color: #dc3545;
 }
-
+/*online-shop*/
+.online-shop .content{
+    margin-top: 85px;
+}
 /*****RWD****/
-@media (min-width: 992px){
+@media (max-width: 991px) {
     #mainNav.navbar-shrink {
         border-bottom: 5px solid #B79C61;
         background-color: #fff;
@@ -376,3 +491,57 @@ footer{
         box-shadow: 0px 1px 15px rgba(0,0,0,0.3);
     }
 }
+@media (min-width: 544px) {
+
+}
+@media (min-width: 768px) {
+
+}
+@media (min-width: 992px) {
+
+}
+@media (min-width: 1200px) {
+
+}
+
+/*通用 ========================= 平板以下 (手機、平板)*/
+@media only screen and (max-width : 767px){
+    .shop .con .con-pic {
+        height: 315px;
+    }
+    footer{
+        height: 8em;
+    }
+    footer .top {
+        flex-wrap: wrap;
+        width: 95%;
+        font-size: 0.95em;
+    }
+    footer .bottom {
+        text-align: center;
+        width: 100%;
+        font-size: 0.8em;
+    }
+}
+/*通用 ========================= 手機*/
+@media only screen and (max-width : 480px) {}
+/*通用 ========================= 小型手機*/
+@media only screen and (max-width : 320px){}
+/*iPhone 6 landscape橫式*/
+@media only screen and (min-device-width : 375px) and (max-device-width : 667px) and (orientation : landscape) {}
+/*iPhone 6 portrait直式*/
+@media only screen and (min-device-width : 375px) and (max-device-width : 667px) and (orientation : portrait) {}
+/*iPhone 5 & 5S landscape橫式*/
+@media only screen and (min-device-width : 320px) and (max-device-width : 568px) and (orientation : landscape) {}
+/*iPhone 5 & 5S portrait直式*/
+@media only screen and (min-device-width : 320px) and (max-device-width : 568px) and (orientation : portrait) {}
+/*iPad in landscape 橫式*/
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape) {}
+/*iPad in portrait 直式*/
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait) {}
+/*iPad Pro in landscape 橫式*/
+@media only screen and (min-device-width : 1024px) and (max-device-width : 1366px) and (orientation : landscape){}
+/*iPad Pro in portrait 直式*/
+@media only screen and (min-device-width : 1024px) and (max-device-width : 1366px) and (orientation : portrait){}
+/*iphone X 橫式*/
+@media only screen and (min-device-width : 375px) and (max-device-width : 812px) and (orientation : landscape){}

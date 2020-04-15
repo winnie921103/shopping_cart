@@ -9,15 +9,14 @@
     <link rel="stylesheet" type="text/css" href="plugins/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="plugins/slick/slick.css"/>
     <link rel="stylesheet" type="text/css" href="plugins/slick/slick-theme.css"/>
+    <link href="https://fonts.googleapis.com/css?family=Noto+Serif+TC&amp;display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300;400;500;700;900&amp;display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto&amp;display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/reset.css">
     <link rel="stylesheet" type="text/css" href="css/all.css">
     <link rel="stylesheet" type="text/css" href="css/pushy.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
-    <link href="https://fonts.googleapis.com/css?family=Noto+Serif+TC&amp;display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300;400;500;700;900&amp;display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Barlow+Condensed&amp;display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Roboto&amp;display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Fjalla+One&amp;display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Barlow+Condensed&amp;display=swap" rel="stylesheet">
+
 </head>
 <body class="index">
 <!-- Navigation -->
@@ -27,20 +26,20 @@
             <i class="fas fa-bars"></i>
         </button>
         <a class="navbar-brand js-scroll-trigger" href="index.html"><img src="image/index/logo2.svg" width="180" alt="logo"></a>
-        <a href="cart.html" class="phone-cart"><i class="fas fa-shopping-cart"></i></a>
+        <a href="page/cart.html" class="phone-cart"><i class="fas fa-shopping-cart"></i></a>
         <div class="collapse navbar-collapse" id="navbarResponsive">
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item">
                     <a class="nav-link" href="index.html">首頁</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="shop.html">線上購物</a>
+                    <a class="nav-link" href="page/shop.html">線上購物</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="login.html">登入</a>
+                    <a class="nav-link" href="page/login.html"><i class="far fa-user"></i>會員專區</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link cart" href="cart.html"><i class="fas fa-shopping-cart"></i></a>
+                    <a class="nav-link cart" href="page/cart.html"><div class="icon_cart"></div><span>0</span></a>
                 </li>
             </ul>
         </div>
@@ -69,6 +68,7 @@
         </ul>
     </div>
 </nav>
+<!--輪播-->
 <header class="banner">
     <div class="container-fluid">
         <div class="slick-item">
@@ -96,12 +96,30 @@
         </div>
     </div>
 </header>
-<section class="shop hidden-xs">
+<!--加入聯盟-->
+<section class="join">
+    <div class="container">
+            <ul>
+                <li class="title">聯盟行銷</li>
+                <li class="subtitle">零門檻，零費用，只要3步驟，幫自己加薪！</li>
+            </ul>
+            <ul class="bottom">
+                <li class="p">點擊「加入我們」，獲取專屬代碼</li>
+                <li class="p">分享您的專屬代碼</li>
+                <li class="p">消費金額，立碼回饋到您身上</li>
+            </ul>
+            <div class="inner">
+                <a class="btn" href="javascript:void(0)">加入我們</a>
+            </div>
+    </div>
+</section>
+<!--最新商品-->
+<section class="shop new-product hidden-xs">
     <div class="container">
         <div class="row">
             <div class="col-md-4 con">
                 <a href="javascript:void(0)" alt="日本水溶性膳食纖維">
-                    <div class="con-pic new" style="background-image: url('image/products/pdimg-02.jpg')">
+                    <div class="con-pic new" style="background-image: url('image/products/pdimg-01.jpg')">
                         <i class="far fa-heart like"></i>
                     </div>
                 </a>
@@ -110,11 +128,11 @@
                     <span class="none">$3000</span>
                     <span class="sale">$2500</span>
                 </div>
-                <button>加入購物車</button>
+                <button><i class="fas fa-cart-plus"></i>加入購物車</button>
             </div>
             <div class="col-md-4 con">
                 <a href="javascript:void(0)" alt="MS搖窈飲">
-                    <div class="con-pic new" style="background-image: url('image/products/pdimg-03.jpg')">
+                    <div class="con-pic new" style="background-image: url('image/products/pdimg-02.jpg')">
                         <i class="far fa-heart like"></i>
                     </div>
                 </a>
@@ -123,11 +141,11 @@
                     <span class="none">$3000</span>
                     <span class="sale">$2500</span>
                 </div>
-                <button>加入購物車</button>
+                <button><i class="fas fa-cart-plus"></i>加入購物車</button>
             </div>
             <div class="col-md-4 con">
                 <a href="javascript:void(0)" alt="綠原酸（ACID）">
-                    <div class="con-pic new" style="background-image: url('image/products/pdimg-04.jpg')">
+                    <div class="con-pic new" style="background-image: url('image/products/pdimg-03.jpg')">
                         <i class="far fa-heart like"></i>
                     </div>
                 </a>
@@ -135,23 +153,71 @@
                     <span>綠原酸（ACID）</span>
                     <span>$250</span>
                 </div>
-                <button>加入購物車</button>
+                <button><i class="fas fa-cart-plus"></i>加入購物車</button>
             </div>
         </div>
     </div>
 </section>
-<footer>
+<!--本日精選-->
+<section class="shop hidden-xs">
     <div class="container">
-        <a href="https://goo.gl/maps/MiNsxCfYf3YURhsNA" target="_blank">
-            <i class="fas fa-map-marker-alt"></i><span>407620 台中市西屯區市政路500號9樓之1</span>
-        </a>
-        <a href="tel:0422546810">
-            <i class="fas fa-phone-alt"></i><span>04-2254-6810</span>
-        </a>
-        <a href="mailto:txiltdinc@gmail.com">
-            <i class="far fa-envelope"></i><span>txiltdinc@gmail.com</span>
-        </a>
-        <span>Copyright © 2020 騰璽國際股份有限公司</span> <span>All Rights Reserved.</span>
+        <div class="row">
+            <div class="col-md-4 con">
+                <a href="javascript:void(0)" alt="日本水溶性膳食纖維">
+                    <div class="con-pic new" style="background-image: url('image/products/pdimg-01.jpg')">
+                        <i class="far fa-heart like"></i>
+                    </div>
+                </a>
+                <div class="bio d-flex">
+                    <span>日本水溶性膳食纖維</span>
+                    <span class="none">$3000</span>
+                    <span class="sale">$2500</span>
+                </div>
+                <button><i class="fas fa-cart-plus"></i>加入購物車</button>
+            </div>
+            <div class="col-md-4 con">
+                <a href="javascript:void(0)" alt="MS搖窈飲">
+                    <div class="con-pic new" style="background-image: url('image/products/pdimg-02.jpg')">
+                        <i class="far fa-heart like"></i>
+                    </div>
+                </a>
+                <div class="bio d-flex">
+                    <span>MS搖窈飲</span>
+                    <span class="none">$3000</span>
+                    <span class="sale">$2500</span>
+                </div>
+                <button><i class="fas fa-cart-plus"></i>加入購物車</button>
+            </div>
+            <div class="col-md-4 con">
+                <a href="javascript:void(0)" alt="綠原酸（ACID）">
+                    <div class="con-pic new" style="background-image: url('image/products/pdimg-03.jpg')">
+                        <i class="far fa-heart like"></i>
+                    </div>
+                </a>
+                <div class="bio d-flex">
+                    <span>綠原酸（ACID）</span>
+                    <span>$250</span>
+                </div>
+                <button><i class="fas fa-cart-plus"></i>加入購物車</button>
+            </div>
+        </div>
+    </div>
+</section>
+<!--頁尾-->
+<footer>
+    <div class="container-fluid">
+        <div class="top">
+            <a href="https://goo.gl/maps/MiNsxCfYf3YURhsNA" target="_blank">
+                <i class="fas fa-map-marker-alt"></i><span>407620 台中市西屯區市政路500號9樓之1</span>
+            </a>
+            <a href="tel:0422546810">
+                <i class="fas fa-phone-alt"></i><span>04-2254-6810</span>
+            </a>
+            <a href="mailto:txiltdinc@gmail.com">
+                <i class="far fa-envelope"></i><span>txiltdinc@gmail.com</span>
+            </a>
+        </div>
+        <div class="bottom">Copyright © 2020 騰璽國際股份有限公司 <span>All Rights Reserved.</span></div>
     </div>
 </footer>
 <!--JS -->
@@ -188,6 +254,35 @@
         scale: 0,
         reset:true
     });
+    sr.reveal('.join .title', {
+        delay: 150,
+        scale: 0,
+        reset:true
+    });
+    sr.reveal('.join .subtitle', {
+        delay: 350,
+        scale: 0,
+        reset:true
+    });
+    sr.reveal('.join .p', {
+        delay: 550,
+        scale: 0,
+        reset:true
+    });
+    sr.reveal('.join .btn', {
+        distance : '90px',
+        easing   : 'ease-in-out',
+        delay: 650,
+        opacity:0,
+        reset:true
+    });
+    sr.reveal('.join', {
+        distance : '90px',
+        easing   : 'ease-in-out',
+        opacity:0,
+        reset:true
+    });
+
 </script>
 </body>
 </html>
