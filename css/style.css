@@ -175,10 +175,10 @@ body{
     padding: 0;
 }
 /*頁首*/
-.pushy-open-right #mainNav{
-    -webkit-transform: translate3d(-200px, 0, 0);
-    -ms-transform: translate3d(-200px, 0, 0);
-    transform: translate3d(-200px, 0, 0);
+.pushy-open-right #mainNav,.pushy-open-right #container{
+    -webkit-transform: translate3d(-300px, 0, 0);
+    -ms-transform: translate3d(-300px, 0, 0);
+    transform: translate3d(-300px, 0, 0);
 }
 #mainNav {
     border-color: transparent;
@@ -289,11 +289,12 @@ footer a:hover{
     text-align: left;
     font-size: 1em;
 }
-.join .btn{
+.btn{
     color: #fff;
     background: #b79c61;
     padding: 10px 50px;
     font-size: 1.2em;
+    margin: 0 auto;
 }
 .join ul li{
     margin: 10px 0;
@@ -468,6 +469,135 @@ footer a:hover{
 .shop .con .bio .sale{
     color: #dc3545;
 }
+/*購物車彈出框*/
+.cart-con .title {
+    text-align: center;
+    font-size: 24px;
+    padding: 16px 0;
+    background-color: #f1ebe0;
+    color: #625434;
+    font-weight: bold;
+}
+.cart-con .content:not(:nth-child(1)) {
+    padding: 15px 0;
+    border-top: 1px solid #f1ebe0;
+}
+.cart-con .img-pic {
+    background-size: cover;
+    background-position: center;
+    height: 110px;
+}
+.cart-con .name-num article h4 {
+    color: #625434;
+    font-size: 20px;
+}
+.cart-con .name-num article p {
+    margin-bottom: 0;
+    color: #625434;
+}
+.cart-con .count {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+.cart-con .count li {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    width: 45px;
+    height: 40px;
+    text-align: center;
+    border: 1px solid #f1ebe0;
+    font-weight: bold;
+    color: #625434;
+    font-weight: bold;
+    -webkit-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out;
+}
+.cart-con .count li:nth-child(1) {
+    border-right: 0px solid #000;
+    border-radius: 4px 0 0 4px;
+    cursor: pointer;
+}
+.cart-con .count li:nth-child(3) {
+    border-left: 0px solid #000;
+    border-radius: 0 4px 4px 0;
+    cursor: pointer;
+}
+.cart-con .count li input {
+    width: 40px;
+    height: 100%;
+    text-align: center;
+    border: none;
+}
+.cart-con .price {
+    font-size: 20px;
+    font-weight: bold;
+    color: #625434;
+}
+.cart-con .delet {
+    -webkit-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    color: #dc3545;
+    font-weight: bold;
+    cursor: pointer;
+}
+.cart-con .right-con .top-con h3 {
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    padding: 16px 0;
+    border-bottom: 1px #f1ebe0 solid;
+    margin-bottom: 15px;
+}
+.cart-con .right-con .top-con {
+    padding: 0 20px;
+}
+.cart-con .right-con .top-con .subtotal, .cart-con .right-con .top-con .freight, .cart-con .right-con .top-con .total {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    color: #f1ebe0;
+    line-height: 1;
+}
+.cart-con .right-con .top-con .total {
+    padding: 5px 0;
+    font-size: 20px;
+    font-weight: bold;
+    color: #fff;
+}
+.cart-con .right-con .checkout-btn .submit-checkout {
+    color: #625434;
+    padding: 20px 0;
+    text-align: center;
+    background-color: #FFE180;
+    width: 100%;
+    -webkit-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out;
+    font-size: 24px;
+    font-weight: bold;
+}
 /*online-shop*/
 .online-shop .content{
     margin-top: 85px;
@@ -481,12 +611,54 @@ footer a:hover{
         -webkit-box-shadow: 0px 1px 15px rgba(0,0,0,0.3);
         box-shadow: 0px 1px 15px rgba(0,0,0,0.3);
     }
+    #mainNav .phone-cart {
+        display: block;
+        -webkit-animation-duration: 0.3s;
+        animation-duration: 0.3s;
+        cursor: pointer;
+    }
+    #mainNav .cart {
+        display: none;
+        -webkit-animation-duration: 0.3s;
+        animation-duration: 0.3s;
+    }
 }
 @media (min-width: 544px) {
 
+
+
 }
 @media (min-width: 768px) {
-
+    /*購物車彈出框*/
+    .cart-con .price {
+        text-align: right;
+        padding: 10px 20px;
+        margin-top: 15px;
+        margin-bottom: 10px;
+        border-top: 1px solid #f1ebe0;
+        border-bottom: 1px solid #f1ebe0;
+    }
+    .cart-con .name-num {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        -webkit-box-align: end;
+        -ms-flex-align: end;
+        align-items: end;
+    }
+    .cart-con .right-con .top-con h3 {
+        background-color: #f1ebe0;
+        color: #625434;
+    }
+    .cart-con .right-con .top-con .subtotal, .cart-con .right-con .top-con .freight, .cart-con .right-con .top-con .total {
+        color: #625434;
+    }
+    .cart-con .right-con .checkout-btn .submit-checkout {
+        width: calc(100% + 30px);
+        position: relative;
+        right: 15px;
+    }
 }
 @media (min-width: 992px) {
 
@@ -540,9 +712,41 @@ footer a:hover{
         width: 100%;
         font-size: 0.8em;
     }
+    /*購物車彈出框*/
+    .cart-con .price {
+        text-align: right;
+        padding: 10px 20px;
+        margin-top: 15px;
+        margin-bottom: 10px;
+        border-top: 1px solid #f1ebe0;
+        border-bottom: 1px solid #f1ebe0;
+    }
+    .cart-con .name-num {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        -webkit-box-align: end;
+        -ms-flex-align: end;
+        align-items: end;
+    }
+    .cart-con .right-con .top-con h3 {
+        background-color: #f1ebe0;
+        color: #625434;
+    }
+    .cart-con .right-con .top-con .subtotal, .cart-con .right-con .top-con .freight, .cart-con .right-con .top-con .total {
+        color: #625434;
+    }
+    .cart-con .right-con .checkout-btn .submit-checkout {
+        width: calc(100% + 30px);
+        position: relative;
+        right: 15px;
+    }
 }
 /*通用 ========================= 手機*/
-@media only screen and (max-width : 480px) {}
+@media only screen and (max-width : 480px) {
+
+}
 /*通用 ========================= 小型手機*/
 @media only screen and (max-width : 320px){}
 /*iPhone 6 landscape橫式*/

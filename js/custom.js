@@ -72,6 +72,17 @@
 
 
         });
+        //購物車刪除
+        function confirmDelet(e) {
+            var r = confirm("確定要刪除?");
+            if (r == true) {
+                $(e).fadeOut();
+            } else { }
+        }
+        $('.delet').click(function(e){
+            let num = $(this).attr('data-target');
+            confirmDelet(num);
+        })
     });
 
 })(this.jQuery);
