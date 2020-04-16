@@ -38,11 +38,6 @@
             e.preventDefault();
         });
 
-        /*main_btn 主選單*/
-        function shake() {
-
-                $(".cart,.phone-cart").addClass("shake");
-        }
         /*checkbox*/
         $(".checkboxAll").click(function(){
             console.log($(this).hasClass("checked"))
@@ -58,6 +53,10 @@
             $(this).toggleClass("checked");
 
         });
+
+        $(".slick-active .text").addClass("animated fadeInBlur");
+        $(".slick-active .text .title").addClass("animated fadeInUp");
+        $(".slick-active .text .p").addClass("animated fadeInDown");
         function testAnim(shake) {
             $('.cart, .phone-cart').removeClass('shake').addClass('shake').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function(){
                 $(this).removeClass('shake');
