@@ -522,6 +522,7 @@ footer a:hover{
     font-weight: bold;
     -webkit-transition: all .2s ease-in-out;
     transition: all .2s ease-in-out;
+
 }
 .cart-con .count li:nth-child(1) {
     border-right: 0px solid #000;
@@ -613,14 +614,14 @@ footer a:hover{
     }
     #mainNav .phone-cart {
         display: block;
-        -webkit-animation-duration: 0.3s;
-        animation-duration: 0.3s;
+        -webkit-animation-duration: 1s;
+        animation-duration: 1s;
         cursor: pointer;
     }
     #mainNav .cart {
         display: none;
-        -webkit-animation-duration: 0.3s;
-        animation-duration: 0.3s;
+        -webkit-animation-duration: 1s;
+        animation-duration: 1s;
     }
 }
 @media (min-width: 544px) {
@@ -675,14 +676,14 @@ footer a:hover{
     }
     #mainNav .phone-cart {
         display: block;
-        -webkit-animation-duration: 0.3s;
-        animation-duration: 0.3s;
+        -webkit-animation-duration: 1s;
+        animation-duration: 1s;
         cursor: pointer;
     }
     #mainNav .cart {
         display: none;
-        -webkit-animation-duration: 0.3s;
-        animation-duration: 0.3s;
+        -webkit-animation-duration:1s;
+        animation-duration:1s;
     }
     .join .subtitle{
         font-size: 1em;

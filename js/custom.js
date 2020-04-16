@@ -54,9 +54,10 @@
 
         });
 
-        $(".slick-active .text").addClass("animated fadeInBlur");
-        $(".slick-active .text .title").addClass("animated fadeInUp");
-        $(".slick-active .text .p").addClass("animated fadeInDown");
+        $(".slick-active .text").removeClass("animated fadeInBlur").addClass("animated fadeInBlur");
+        $(".slick-active .text .title").removeClass("animated fadeInUp").addClass("animated fadeInUp");
+        $(".slick-active .text .p").removeClass("animated fadeInDown").addClass("animated fadeInDown");
+
         function testAnim(shake) {
             $('.cart, .phone-cart').removeClass('shake').addClass('shake').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function(){
                 $(this).removeClass('shake');
