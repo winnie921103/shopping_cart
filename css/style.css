@@ -481,6 +481,7 @@ footer a:hover{
     display: flex;
     justify-content: flex-end;
     padding-right: 10px;
+    text-align: right;
 }
 .online-shop .order-by select {
     width: 50%;
