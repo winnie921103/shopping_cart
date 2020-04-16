@@ -1,3 +1,4 @@
+@import "animate.css";
 /* 共用 */
 * {
     -webkit-box-sizing: border-box;
@@ -617,13 +618,14 @@ footer a:hover{
     }
     #mainNav .phone-cart {
         display: block;
-        -webkit-animation-duration: 1s;
-        animation-duration: 1s;
+        -webkit-animation-duration: .3s;
+        animation-duration: .3s;
         cursor: pointer;
     }
     #mainNav .cart {
         display: none;
-        animation: hue 60s infinite linear;
+        -webkit-animation-duration: 1s;
+        animation-duration: 1s;
     }
 }
 @media (min-width: 544px) {
@@ -676,7 +678,7 @@ footer a:hover{
         text-align: center;
         font-size: 1.2em;
     }
-    #mainNav .phone-cart {
+    #mainNav .phone-cart.shake {
         display: block;
         -webkit-animation-duration: 1s;
         animation-duration: 1s;
