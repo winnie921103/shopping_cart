@@ -86,13 +86,13 @@ body{
     font-size: 20px;
 }
 @-webkit-keyframes fadeInBlur {
-    from {
+    0% {
         opacity: 0;
         -webkit-filter: blur(20px);
         filter: blur(20px);
     }
 
-    to {
+    100% {
         opacity: 1;
         -webkit-filter: blur(0);
         filter: blur(0);
@@ -100,13 +100,13 @@ body{
 }
 
 @keyframes fadeInBlur {
-    from {
+    0% {
         opacity: 0;
         -webkit-filter: blur(20px);
         filter: blur(20px);
     }
 
-    to {
+    100% {
         opacity: 1;
         -webkit-filter: blur(0);
         filter: blur(0);
@@ -118,13 +118,13 @@ body{
     animation-name: fadeInBlur;
 }
 @-webkit-keyframes fadeInUp {
-    from {
+    0%  {
         opacity: 0;
         -webkit-transform: translate3d(0, 20px, 0);
         transform: translate3d(0,20px, 0);
     }
 
-    to {
+    100% {
         opacity: 1;
         -webkit-transform: none;
         transform: none;
@@ -132,26 +132,26 @@ body{
 }
 
 @keyframes fadeInUp {
-    from {
+    0%{
         opacity: 0;
         -webkit-transform: translate3d(0, 20px, 0);
         transform: translate3d(0, 20px, 0);
     }
 
-    to {
+    100% {
         opacity: 1;
         -webkit-transform: none;
         transform: none;
     }
 }
 @-webkit-keyframes fadeInDown {
-    from {
+    0% {
         opacity: 0;
         -webkit-transform: translate3d(0, -20px, 0);
         transform: translate3d(0, -20px, 0);
     }
 
-    to {
+    100% {
         opacity: 1;
         -webkit-transform: none;
         transform: none;
@@ -159,13 +159,13 @@ body{
 }
 
 @keyframes fadeInDown {
-    from {
+    0% {
         opacity: 0;
         -webkit-transform: translate3d(0, -20px, 0);
         transform: translate3d(0, -20px, 0);
     }
 
-    to {
+    100% {
         opacity: 1;
         -webkit-transform: none;
         transform: none;
@@ -722,7 +722,6 @@ footer a:hover{
     }
     .shop .con .con-pic {
         height: 315px;
-        opacity: 0;
     }
     footer{
         height: 8em;
