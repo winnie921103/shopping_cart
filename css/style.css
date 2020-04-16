@@ -470,6 +470,10 @@ footer a:hover{
     color: #dc3545;
 }
 /*購物車彈出框*/
+#no-data span{
+    margin: 0 auto;
+    font-weight: bold;
+}
 .cart-con .title {
     text-align: center;
     font-size: 24px;
