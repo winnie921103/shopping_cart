@@ -58,7 +58,21 @@
             $(this).toggleClass("checked");
 
         });
+        function testAnim(shake) {
+            $('.cart, .phone-cart').removeClass('shake').addClass('shake').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function(){
+                $(this).removeClass('shake');
+            });
+        };
 
+        $(document).ready(function(){
+            $('.shop .con button').click(function(e){
+                e.preventDefault();
+                var anim = $('.shake');
+                testAnim(anim);
+            });
+
+
+        });
     });
 
 })(this.jQuery);
