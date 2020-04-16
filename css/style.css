@@ -688,17 +688,41 @@ footer a:hover{
     .join .subtitle{
         font-size: 1em;
     }
+
     .text{
         width: 90%;
+        opacity: 0;
     }
     .text .title{
         font-size: 1.5em;
+        opacity: 0;
     }
     .text .p{
         font-size: 1em;
+        opacity: 0;
+    }
+    .item.slick-active{
+        -webkit-transition: all 1s ease;
+        transition: all 1s ease;
+    }
+    .slick-active .text{
+        opacity: 1;
+        -webkit-animation: fadeInBlur 1.2s both 1s;
+        animation: fadeInBlur 1.2s both 1s;
+    }
+    .slick-active .text .title{
+        opacity: 1;
+        -webkit-animation: fadeInUp 1.2s both 1s;
+        animation: fadeInUp 1.2s both 1s;
+    }
+    .slick-active .text .p{
+        opacity: 1;
+        -webkit-animation: fadeInDown 1.2s both 1s;
+        animation: fadeInDown 1.2s both 1s;
     }
     .shop .con .con-pic {
         height: 315px;
+        opacity: 0;
     }
     footer{
         height: 8em;
