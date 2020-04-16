@@ -1,4 +1,3 @@
-@import "animate.css";
 /* 共用 */
 * {
     -webkit-box-sizing: border-box;
@@ -618,7 +617,6 @@ footer a:hover{
     }
     #mainNav .phone-cart {
         display: block;
-        animation: ;
         -webkit-animation-duration: 1s;
         animation-duration: 1s;
         cursor: pointer;
