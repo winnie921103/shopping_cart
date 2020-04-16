@@ -58,16 +58,16 @@
         $(".slick-active .text .title").removeClass("animated fadeInUp").addClass("animated fadeInUp");
         $(".slick-active .text .p").removeClass("animated fadeInDown").addClass("animated fadeInDown");
 
-        function testAnim(jello) {
-            $('.cart, .phone-cart').removeClass('jello').addClass('jello').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function(){
-                $(this).removeClass('jello');
+        function testAnim(shake) {
+            $('.cart, .phone-cart').removeClass('shake').addClass('shake'+' animated').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function(){
+                $(this).removeClass('shake');
             });
         };
 
         $(document).ready(function(){
             $('.shop .con button').click(function(e){
                 e.preventDefault();
-                var anim = $('.jello');
+                var anim = $('.shake');
                 testAnim(anim);
             });
 

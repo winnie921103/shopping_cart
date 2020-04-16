@@ -618,14 +618,14 @@ footer a:hover{
     }
     #mainNav .phone-cart {
         display: block;
+        animation: ;
         -webkit-animation-duration: 1s;
         animation-duration: 1s;
         cursor: pointer;
     }
     #mainNav .cart {
         display: none;
-        -webkit-animation-duration: 1s;
-        animation-duration: 1s;
+        animation: hue 60s infinite linear;
     }
 }
 @media (min-width: 544px) {
