@@ -77,8 +77,8 @@
 .bounce {
   -webkit-animation-name: bounce;
   animation-name: bounce;
-  -webkit-transform-origin: center bot100%m;
-  transform-origin: center bot100%m;
+  -webkit-transform-origin: center bottom;
+  transform-origin: center bottom;
 }
 
 @-webkit-keyframes flash {
@@ -413,8 +413,8 @@
 }
 
 .swing {
-  -webkit-transform-origin: 100%p center;
-  transform-origin: 100%p center;
+  -webkit-transform-origin: top center;
+  transform-origin: top center;
   -webkit-animation-name: swing;
   animation-name: swing;
 }
@@ -2365,16 +2365,16 @@
 
 @-webkit-keyframes rotateInDownLeft {
   0% {
-    -webkit-transform-origin: left bot100%m;
-    transform-origin: left bot100%m;
+    -webkit-transform-origin: left bottom;
+    transform-origin: left bottom;
     -webkit-transform: rotate3d(0, 0, 1, -45deg);
     transform: rotate3d(0, 0, 1, -45deg);
     opacity: 0;
   }
 
   100% {
-    -webkit-transform-origin: left bot100%m;
-    transform-origin: left bot100%m;
+    -webkit-transform-origin: left bottom;
+    transform-origin: left bottom;
     -webkit-transform: translate3d(0, 0, 0);
     transform: translate3d(0, 0, 0);
     opacity: 1;
@@ -2383,16 +2383,16 @@
 
 @keyframes rotateInDownLeft {
   0% {
-    -webkit-transform-origin: left bot100%m;
-    transform-origin: left bot100%m;
+    -webkit-transform-origin: left bottom;
+    transform-origin: left bottom;
     -webkit-transform: rotate3d(0, 0, 1, -45deg);
     transform: rotate3d(0, 0, 1, -45deg);
     opacity: 0;
   }
 
   100% {
-    -webkit-transform-origin: left bot100%m;
-    transform-origin: left bot100%m;
+    -webkit-transform-origin: left bottom;
+    transform-origin: left bottom;
     -webkit-transform: translate3d(0, 0, 0);
     transform: translate3d(0, 0, 0);
     opacity: 1;
@@ -2406,16 +2406,16 @@
 
 @-webkit-keyframes rotateInDownRight {
   0% {
-    -webkit-transform-origin: right bot100%m;
-    transform-origin: right bot100%m;
+    -webkit-transform-origin: right bottom;
+    transform-origin: right bottom;
     -webkit-transform: rotate3d(0, 0, 1, 45deg);
     transform: rotate3d(0, 0, 1, 45deg);
     opacity: 0;
   }
 
   100% {
-    -webkit-transform-origin: right bot100%m;
-    transform-origin: right bot100%m;
+    -webkit-transform-origin: right bottom;
+    transform-origin: right bottom;
     -webkit-transform: translate3d(0, 0, 0);
     transform: translate3d(0, 0, 0);
     opacity: 1;
@@ -2424,16 +2424,16 @@
 
 @keyframes rotateInDownRight {
   0% {
-    -webkit-transform-origin: right bot100%m;
-    transform-origin: right bot100%m;
+    -webkit-transform-origin: right bottom;
+    transform-origin: right bottom;
     -webkit-transform: rotate3d(0, 0, 1, 45deg);
     transform: rotate3d(0, 0, 1, 45deg);
     opacity: 0;
   }
 
   100% {
-    -webkit-transform-origin: right bot100%m;
-    transform-origin: right bot100%m;
+    -webkit-transform-origin: right bottom;
+    transform-origin: right bottom;
     -webkit-transform: translate3d(0, 0, 0);
     transform: translate3d(0, 0, 0);
     opacity: 1;
@@ -2447,16 +2447,16 @@
 
 @-webkit-keyframes rotateInUpLeft {
   0% {
-    -webkit-transform-origin: left bot100%m;
-    transform-origin: left bot100%m;
+    -webkit-transform-origin: left bottom;
+    transform-origin: left bottom;
     -webkit-transform: rotate3d(0, 0, 1, 45deg);
     transform: rotate3d(0, 0, 1, 45deg);
     opacity: 0;
   }
 
   100% {
-    -webkit-transform-origin: left bot100%m;
-    transform-origin: left bot100%m;
+    -webkit-transform-origin: left bottom;
+    transform-origin: left bottom;
     -webkit-transform: translate3d(0, 0, 0);
     transform: translate3d(0, 0, 0);
     opacity: 1;
@@ -2465,16 +2465,16 @@
 
 @keyframes rotateInUpLeft {
   0% {
-    -webkit-transform-origin: left bot100%m;
-    transform-origin: left bot100%m;
+    -webkit-transform-origin: left bottom;
+    transform-origin: left bottom;
     -webkit-transform: rotate3d(0, 0, 1, 45deg);
     transform: rotate3d(0, 0, 1, 45deg);
     opacity: 0;
   }
 
   100% {
-    -webkit-transform-origin: left bot100%m;
-    transform-origin: left bot100%m;
+    -webkit-transform-origin: left bottom;
+    transform-origin: left bottom;
     -webkit-transform: translate3d(0, 0, 0);
     transform: translate3d(0, 0, 0);
     opacity: 1;
@@ -2488,16 +2488,16 @@
 
 @-webkit-keyframes rotateInUpRight {
   0% {
-    -webkit-transform-origin: right bot100%m;
-    transform-origin: right bot100%m;
+    -webkit-transform-origin: right bottom;
+    transform-origin: right bottom;
     -webkit-transform: rotate3d(0, 0, 1, -90deg);
     transform: rotate3d(0, 0, 1, -90deg);
     opacity: 0;
   }
 
   100% {
-    -webkit-transform-origin: right bot100%m;
-    transform-origin: right bot100%m;
+    -webkit-transform-origin: right bottom;
+    transform-origin: right bottom;
     -webkit-transform: translate3d(0, 0, 0);
     transform: translate3d(0, 0, 0);
     opacity: 1;
@@ -2506,16 +2506,16 @@
 
 @keyframes rotateInUpRight {
   0% {
-    -webkit-transform-origin: right bot100%m;
-    transform-origin: right bot100%m;
+    -webkit-transform-origin: right bottom;
+    transform-origin: right bottom;
     -webkit-transform: rotate3d(0, 0, 1, -90deg);
     transform: rotate3d(0, 0, 1, -90deg);
     opacity: 0;
   }
 
   100% {
-    -webkit-transform-origin: right bot100%m;
-    transform-origin: right bot100%m;
+    -webkit-transform-origin: right bottom;
+    transform-origin: right bottom;
     -webkit-transform: translate3d(0, 0, 0);
     transform: translate3d(0, 0, 0);
     opacity: 1;
@@ -2566,14 +2566,14 @@
 
 @-webkit-keyframes rotateOutDownLeft {
   0% {
-    -webkit-transform-origin: left bot100%m;
-    transform-origin: left bot100%m;
+    -webkit-transform-origin: left bottom;
+    transform-origin: left bottom;
     opacity: 1;
   }
 
   100% {
-    -webkit-transform-origin: left bot100%m;
-    transform-origin: left bot100%m;
+    -webkit-transform-origin: left bottom;
+    transform-origin: left bottom;
     -webkit-transform: rotate3d(0, 0, 1, 45deg);
     transform: rotate3d(0, 0, 1, 45deg);
     opacity: 0;
@@ -2582,14 +2582,14 @@
 
 @keyframes rotateOutDownLeft {
   0% {
-    -webkit-transform-origin: left bot100%m;
-    transform-origin: left bot100%m;
+    -webkit-transform-origin: left bottom;
+    transform-origin: left bottom;
     opacity: 1;
   }
 
   100% {
-    -webkit-transform-origin: left bot100%m;
-    transform-origin: left bot100%m;
+    -webkit-transform-origin: left bottom;
+    transform-origin: left bottom;
     -webkit-transform: rotate3d(0, 0, 1, 45deg);
     transform: rotate3d(0, 0, 1, 45deg);
     opacity: 0;
@@ -2603,14 +2603,14 @@
 
 @-webkit-keyframes rotateOutDownRight {
   0% {
-    -webkit-transform-origin: right bot100%m;
-    transform-origin: right bot100%m;
+    -webkit-transform-origin: right bottom;
+    transform-origin: right bottom;
     opacity: 1;
   }
 
   100% {
-    -webkit-transform-origin: right bot100%m;
-    transform-origin: right bot100%m;
+    -webkit-transform-origin: right bottom;
+    transform-origin: right bottom;
     -webkit-transform: rotate3d(0, 0, 1, -45deg);
     transform: rotate3d(0, 0, 1, -45deg);
     opacity: 0;
@@ -2619,14 +2619,14 @@
 
 @keyframes rotateOutDownRight {
   0% {
-    -webkit-transform-origin: right bot100%m;
-    transform-origin: right bot100%m;
+    -webkit-transform-origin: right bottom;
+    transform-origin: right bottom;
     opacity: 1;
   }
 
   100% {
-    -webkit-transform-origin: right bot100%m;
-    transform-origin: right bot100%m;
+    -webkit-transform-origin: right bottom;
+    transform-origin: right bottom;
     -webkit-transform: rotate3d(0, 0, 1, -45deg);
     transform: rotate3d(0, 0, 1, -45deg);
     opacity: 0;
@@ -2640,14 +2640,14 @@
 
 @-webkit-keyframes rotateOutUpLeft {
   0% {
-    -webkit-transform-origin: left bot100%m;
-    transform-origin: left bot100%m;
+    -webkit-transform-origin: left bottom;
+    transform-origin: left bottom;
     opacity: 1;
   }
 
   100% {
-    -webkit-transform-origin: left bot100%m;
-    transform-origin: left bot100%m;
+    -webkit-transform-origin: left bottom;
+    transform-origin: left bottom;
     -webkit-transform: rotate3d(0, 0, 1, -45deg);
     transform: rotate3d(0, 0, 1, -45deg);
     opacity: 0;
@@ -2656,14 +2656,14 @@
 
 @keyframes rotateOutUpLeft {
   0% {
-    -webkit-transform-origin: left bot100%m;
-    transform-origin: left bot100%m;
+    -webkit-transform-origin: left bottom;
+    transform-origin: left bottom;
     opacity: 1;
   }
 
   100% {
-    -webkit-transform-origin: left bot100%m;
-    transform-origin: left bot100%m;
+    -webkit-transform-origin: left bottom;
+    transform-origin: left bottom;
     -webkit-transform: rotate3d(0, 0, 1, -45deg);
     transform: rotate3d(0, 0, 1, -45deg);
     opacity: 0;
@@ -2677,14 +2677,14 @@
 
 @-webkit-keyframes rotateOutUpRight {
   0% {
-    -webkit-transform-origin: right bot100%m;
-    transform-origin: right bot100%m;
+    -webkit-transform-origin: right bottom;
+    transform-origin: right bottom;
     opacity: 1;
   }
 
   100% {
-    -webkit-transform-origin: right bot100%m;
-    transform-origin: right bot100%m;
+    -webkit-transform-origin: right bottom;
+    transform-origin: right bottom;
     -webkit-transform: rotate3d(0, 0, 1, 90deg);
     transform: rotate3d(0, 0, 1, 90deg);
     opacity: 0;
@@ -2693,14 +2693,14 @@
 
 @keyframes rotateOutUpRight {
   0% {
-    -webkit-transform-origin: right bot100%m;
-    transform-origin: right bot100%m;
+    -webkit-transform-origin: right bottom;
+    transform-origin: right bottom;
     opacity: 1;
   }
 
   100% {
-    -webkit-transform-origin: right bot100%m;
-    transform-origin: right bot100%m;
+    -webkit-transform-origin: right bottom;
+    transform-origin: right bottom;
     -webkit-transform: rotate3d(0, 0, 1, 90deg);
     transform: rotate3d(0, 0, 1, 90deg);
     opacity: 0;
@@ -2714,8 +2714,8 @@
 
 @-webkit-keyframes hinge {
   0% {
-    -webkit-transform-origin: 100%p left;
-    transform-origin: 100%p left;
+    -webkit-transform-origin: top left;
+    transform-origin: top left;
     -webkit-animation-timing-function: ease-in-out;
     animation-timing-function: ease-in-out;
   }
@@ -2724,8 +2724,8 @@
   60% {
     -webkit-transform: rotate3d(0, 0, 1, 80deg);
     transform: rotate3d(0, 0, 1, 80deg);
-    -webkit-transform-origin: 100%p left;
-    transform-origin: 100%p left;
+    -webkit-transform-origin: top left;
+    transform-origin: top left;
     -webkit-animation-timing-function: ease-in-out;
     animation-timing-function: ease-in-out;
   }
@@ -2734,8 +2734,8 @@
   80% {
     -webkit-transform: rotate3d(0, 0, 1, 60deg);
     transform: rotate3d(0, 0, 1, 60deg);
-    -webkit-transform-origin: 100%p left;
-    transform-origin: 100%p left;
+    -webkit-transform-origin: top left;
+    transform-origin: top left;
     -webkit-animation-timing-function: ease-in-out;
     animation-timing-function: ease-in-out;
     opacity: 1;
@@ -2750,8 +2750,8 @@
 
 @keyframes hinge {
   0% {
-    -webkit-transform-origin: 100%p left;
-    transform-origin: 100%p left;
+    -webkit-transform-origin: top left;
+    transform-origin: top left;
     -webkit-animation-timing-function: ease-in-out;
     animation-timing-function: ease-in-out;
   }
@@ -2760,8 +2760,8 @@
   60% {
     -webkit-transform: rotate3d(0, 0, 1, 80deg);
     transform: rotate3d(0, 0, 1, 80deg);
-    -webkit-transform-origin: 100%p left;
-    transform-origin: 100%p left;
+    -webkit-transform-origin: top left;
+    transform-origin: top left;
     -webkit-animation-timing-function: ease-in-out;
     animation-timing-function: ease-in-out;
   }
@@ -2770,8 +2770,8 @@
   80% {
     -webkit-transform: rotate3d(0, 0, 1, 60deg);
     transform: rotate3d(0, 0, 1, 60deg);
-    -webkit-transform-origin: 100%p left;
-    transform-origin: 100%p left;
+    -webkit-transform-origin: top left;
+    transform-origin: top left;
     -webkit-animation-timing-function: ease-in-out;
     animation-timing-function: ease-in-out;
     opacity: 1;
@@ -2796,8 +2796,8 @@
     opacity: 0;
     -webkit-transform: scale(0.1) rotate(30deg);
     transform: scale(0.1) rotate(30deg);
-    -webkit-transform-origin: center bot100%m;
-    transform-origin: center bot100%m;
+    -webkit-transform-origin: center bottom;
+    transform-origin: center bottom;
   }
 
   50% {
@@ -2822,8 +2822,8 @@
     opacity: 0;
     -webkit-transform: scale(0.1) rotate(30deg);
     transform: scale(0.1) rotate(30deg);
-    -webkit-transform-origin: center bot100%m;
-    transform-origin: center bot100%m;
+    -webkit-transform-origin: center bottom;
+    transform-origin: center bottom;
   }
 
   50% {
@@ -3157,8 +3157,8 @@
     opacity: 0;
     -webkit-transform: scale3d(0.1, 0.1, 0.1) translate3d(0, 2000px, 0);
     transform: scale3d(0.1, 0.1, 0.1) translate3d(0, 2000px, 0);
-    -webkit-transform-origin: center bot100%m;
-    transform-origin: center bot100%m;
+    -webkit-transform-origin: center bottom;
+    transform-origin: center bottom;
     -webkit-animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1);
     animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1);
   }
@@ -3177,8 +3177,8 @@
     opacity: 0;
     -webkit-transform: scale3d(0.1, 0.1, 0.1) translate3d(0, 2000px, 0);
     transform: scale3d(0.1, 0.1, 0.1) translate3d(0, 2000px, 0);
-    -webkit-transform-origin: center bot100%m;
-    transform-origin: center bot100%m;
+    -webkit-transform-origin: center bottom;
+    transform-origin: center bottom;
     -webkit-animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1);
     animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1);
   }
@@ -3276,8 +3276,8 @@
     opacity: 0;
     -webkit-transform: scale3d(0.1, 0.1, 0.1) translate3d(0, -2000px, 0);
     transform: scale3d(0.1, 0.1, 0.1) translate3d(0, -2000px, 0);
-    -webkit-transform-origin: center bot100%m;
-    transform-origin: center bot100%m;
+    -webkit-transform-origin: center bottom;
+    transform-origin: center bottom;
     -webkit-animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1);
     animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1);
   }
@@ -3296,8 +3296,8 @@
     opacity: 0;
     -webkit-transform: scale3d(0.1, 0.1, 0.1) translate3d(0, -2000px, 0);
     transform: scale3d(0.1, 0.1, 0.1) translate3d(0, -2000px, 0);
-    -webkit-transform-origin: center bot100%m;
-    transform-origin: center bot100%m;
+    -webkit-transform-origin: center bottom;
+    transform-origin: center bottom;
     -webkit-animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1);
     animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1);
   }
