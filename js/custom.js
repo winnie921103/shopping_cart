@@ -58,7 +58,6 @@
         $(".slick-active .text .title").removeClass("animated fadeInUp").addClass("animated fadeInUp");
         $(".slick-active .text .p").removeClass("animated fadeInDown").addClass("animated fadeInDown");
 
-
         //購物車刪除
         function confirmDelet(e) {
             var r = confirm("確定要刪除?");
@@ -70,20 +69,7 @@
             let num = $(this).attr('data-target');
             confirmDelet(num);
         })
-        //甜點左區塊
-        let wdth=$(window).width();
-        let shoplist = function(e){
-            if(e > 768){
-                $('.shop-list').addClass('show')
-            }else{
-                $('.shop-list').removeClass('show')
-            }
-        }
-        shoplist(wdth);
-        $(window).resize(function() {
-            wdth=$(window).width();
-            shoplist(wdth);
-        });
-    });
 
+
+    });
 })(this.jQuery);

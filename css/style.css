@@ -180,6 +180,9 @@ body{
     -ms-transform: translate3d(-300px, 0, 0);
     transform: translate3d(-300px, 0, 0);
 }
+.pushy{
+    overflow-x: hidden;
+}
 #mainNav {
     border-color: transparent;
     background-color: transparent;
@@ -494,7 +497,7 @@ footer a:hover{
     padding: 6px 10px;
     margin-top: 10px;
 }
-.online-shop .cart-con .title {
+.pushy .cart-con .title {
     text-align: center;
     font-size: 24px;
     padding: 16px 0;
@@ -516,7 +519,7 @@ footer a:hover{
     font-size: 20px;
 }
 .cart-con .name-num article p {
-    margin-bottom: 0;
+    margin: 5px 0;
     color: #625434;
 }
 .cart-con .count {
@@ -625,7 +628,8 @@ footer a:hover{
 }
 /*online-shop線上購物*/
 .online-shop .content-wrap{
-    margin-top: 85px;
+    padding-top: 85px;
+    height: 100vh;
 }
 .page-item.active .page-link {
     background-color: #493c23;
@@ -712,7 +716,123 @@ footer a:hover{
         transform: translate(0px,-50%) rotate(0deg);
     }
 }
-/*****RWD****/
+/*登入*/
+#login {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    margin-top: 170px;
+    margin-bottom: 80px;
+}
+#login .login-con {
+    width: 35%;
+    max-width: 450px;
+    min-width: 320px;
+}
+#login .login-con .top {
+    background-color: #3F5D45;
+    padding: 15px 30px;
+}
+#login .login-con h2 {
+    color: #fff;
+    margin-bottom: 40px;
+    margin-top: 30px;
+    text-align: center;
+    font-weight: bold;
+    font-family: 'Microsoft JhengHei', serif;
+}
+#login .login-con .top {
+    background-color: #3F5D45;
+    padding: 15px 30px;
+}
+#login .login-con .input-group input {
+    background-color: #EAF0ED;
+    height: 100%;
+    border-radius: 0;
+    border: 0;
+    font-size: 18px;
+}
+#login .login-con .input-group {
+    height: 56px;
+    margin-bottom: 15px;
+}
+#login .login-con .form-check {
+    padding-left: 0;
+}
+.cc {
+    display: block;
+    position: relative;
+    padding-left: 30px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 20px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    color: #fff;
+}
+.cc input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+.cc .checkmark {
+    position: absolute;
+    top: 7px;
+    left: 0;
+    height: 16px;
+    width: 16px;
+    background-color: #eee;
+}
+#login .login-con button {
+    background-color: #FFE180;
+    color: #3F5D45;
+    border: 0 solid #000;
+    font-size: 24px;
+    padding: 17px 0;
+    width: 100%;
+    font-family: 'Microsoft JhengHei', serif;
+    font-weight: bold;
+    -webkit-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out;
+    cursor: pointer;
+}
+#login .socail-con {
+    background-color: #EAF0ED;
+    width: 30%;
+    max-width: 400px;
+    padding: 35px 30px;
+}
+#login .socail-con .title {
+    text-align: center;
+    position: relative;
+    margin-bottom: 30px;
+}
+#login .socail-con .s-btn {
+    background-color: #fff;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    height: 56px;
+    margin: 15px 0;
+    -webkit-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out;
+    cursor: pointer;
+}
+/*===========================RWD==============================*/
 @media (max-width: 991px) {
     #mainNav.navbar-shrink {
         border-bottom: 5px solid #B79C61;
@@ -732,6 +852,7 @@ footer a:hover{
         -webkit-animation-duration: .5s;
         animation-duration: .5s;
     }
+
 }
 @media (min-width: 544px) {
 
@@ -769,12 +890,21 @@ footer a:hover{
         position: relative;
         right: 15px;
     }
+    footer .top{
+        width: auto;
+    }
+    footer .bottom {
+        width: 65%;
+        text-align: center;
+    }
 }
 @media (min-width: 992px) {
 
 }
 @media (min-width: 1200px) {
-
+    footer .top{
+        width: 65%;
+    }
 }
 
 /*通用 ========================= 平板以下 (手機、平板)*/
@@ -843,7 +973,7 @@ footer a:hover{
     footer .bottom {
         text-align: center;
         width: 100%;
-        font-size: 0.8em;
+        font-size: 0.75em;
     }
     /*購物車彈出框*/
     .cart-con .price {
