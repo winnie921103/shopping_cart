@@ -70,6 +70,20 @@
             let num = $(this).attr('data-target');
             confirmDelet(num);
         })
+        //甜點左區塊
+        let wdth=$(window).width();
+        let shoplist = function(e){
+            if(e > 768){
+                $('.shop-list').addClass('show')
+            }else{
+                $('.shop-list').removeClass('show')
+            }
+        }
+        shoplist(wdth);
+        $(window).resize(function() {
+            wdth=$(window).width();
+            shoplist(wdth);
+        });
     });
 
 })(this.jQuery);

@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="icon" type="../image/x-icon" href="../../image/favicon.png">
+    <link rel="icon" type="image/x-icon" href="../image/favicon.png">
     <title>TENG XI騰璽國際股份有限公司</title>
     <link rel="stylesheet" type="text/css" href="../plugins/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="../plugins/slick/slick.css"/>
@@ -19,6 +19,70 @@
 
 </head>
 <body class="online-shop">
+<!-- Pushy Menu -->
+<nav class="pushy pushy-right">
+    <div class="pushy-content cart-con">
+        <div class="col-lg-12">
+            <div class="title">您的購物車</div>
+            <div class="row content" id="no-data" style="display: none">
+                <span>尚未加入商品至購物車</span>
+            </div>
+            <!-- item -->
+            <div class="row content" id="d-1">
+                <div class="col-md-6 col-sm-5 col-5 imgs">
+                    <div class="img-pic" style="background-image: url('../image/products/pdimg-01.jpg')"></div>
+                </div>
+                <div class="col-md-6 col-7 col-sm-7  name-num">
+                    <article>
+                        <h4>焦糖瑪卡龍</h4>
+                        <p>NT$ 450</p>
+                    </article>
+                    <ul class="count">
+                        <li class="minus">－</li>
+                        <li class="num">
+                            <input type="number" value="2">
+                        </li>
+                        <li class="plus">+</li>
+                    </ul>
+                </div>
+                <div class="col-lg-12 col-md-12 col-sm-12 price">
+                    NT$ 900
+                </div>
+                <div class="col-md-12 delet hidden-xs" data-target="#d-1">
+                    <i class="far fa-trash-alt"></i>
+                </div>
+            </div>
+            <!-- //item -->
+        </div>
+        <div class="col-lg-12">
+            <div class="right-con">
+                <div class="top-con">
+                    <h3>訂單金額</h3>
+                    <div class="subtotal">
+                        <p>小計</p>
+                        <p>NT$ 2,700</p>
+                    </div>
+                    <div class="freight">
+                        <p>運費</p>
+                        <p>NT$ 300</p>
+                    </div>
+                    <div class="total">
+                        <p>總計</p>
+                        <p>NT$ 3,000</p>
+                    </div>
+                </div>
+                <a href="cart.html" class="checkout-btn">
+                    <div class="submit-checkout">
+                        結帳
+                    </div>
+                </a>
+            </div>
+        </div>
+
+    </div>
+</nav>
+<!-- Site Overlay -->
+<div class="site-overlay"></div>
 <!-- Navigation -->
 <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
     <div class="container">
@@ -26,7 +90,7 @@
             <i class="fas fa-bars"></i>
         </button>
         <a class="navbar-brand js-scroll-trigger" href="../index.html"><img src="../image/index/logo2.svg" width="180" alt="logo"></a>
-        <a href="page/cart.html" class="phone-cart"><div class="icon_cart"></div><span>0</span></a>
+        <span class="phone-cart menu-btn"><div class="icon_cart"></div><span>0</span></span>
         <div class="collapse navbar-collapse" id="navbarResponsive">
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item">
@@ -39,168 +103,202 @@
                     <a class="nav-link" href="../page/login.html"><i class="far fa-user"></i>會員專區</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link cart" href="../page/cart.html"><div class="icon_cart"></div><span>0</span></a>
+                    <span class="nav-link cart menu-btn" ><div class="icon_cart"></div><span>0</span></span>
                 </li>
             </ul>
         </div>
     </div>
 </nav>
-<!-- Pushy Menu -->
-<nav class="pushy pushy-left">
-    <div class="pushy-content">
-        <div class="top">
-            <div>demo</div>
-            <div>心血管一病區</div>
+<!-- content -->
+<div class="page-wrapper" id="container">
+    <div class="content-wrap">
+        <section class="shop">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4 list">
+                        <div class="accordion" id="accordionExample">
+                            <div class="title">產品分類</div>
+                                <div class="card-header flex" id="headingOne">
+                                    <div class="titel_btn" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                      所有商品
+                                    </div>
+                                </div>
+                                <div id="collapseOne" class="collapse show" aria-labelledby="headingOne">
+                                    <ul>
+                                        <li><a href="">本日精選</a></li>
+                                        <li><a href="">熱門商品</a></li>
+                                        <li><a href="">最新商品</a></li>
+                                    </ul>
+                                </div>
+                                <div class="card-header flex" id="headingTwo">
+                                    <div class="titel_btn collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
+                                        咖啡器具
+                                    </div>
+                                </div>
+                                <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo">
+                                    <ul>
+                                        <li><a href="">咖啡機</a></li>
+                                        <li><a href="">濾杯</a></li>
+                                        <li><a href="">手沖壺</a></li>
+                                    </ul>
+                                </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-8 mb-5">
+                            <div class="row order-by mb-4">
+                                <span class="col-md-8">Showing 1–20 of 67 results</span>
+                                <select name="" id="" class="">
+                                    <option value="">預設排序</option>
+                                    <option value="">依熱銷度</option>
+                                    <option value="">依最新項目排序</option>
+                                    <option value="">依價格排序:低至高</option>
+                                    <option value="">依價格排序:高至低</option>
+                                </select>
+                            </div>
+                        <div class="row">
+                            <div class="col-md-6 con">
+                                <a href="javascript:void(0)" alt="日本水溶性膳食纖維">
+                                    <div class="con-pic" style="background-image: url('../image/products/pdimg-01.jpg')">
+                                        <i class="far fa-heart like"></i>
+                                    </div>
+                                </a>
+                                <div class="bio d-flex">
+                                    <span>日本水溶性膳食纖維</span>
+                                </div>
+                                <div class="bio d-flex">
+                                    <div class="price">
+                                        <span class="none">$3000</span>
+                                        <span class="sale">$2500</span>
+                                    </div>
+                                </div>
+                                <button><i class="fas fa-cart-plus"></i>加入購物車</button>
+                            </div>
+                            <div class="col-md-6 con">
+                                <a href="javascript:void(0)" alt="MS搖窈飲">
+                                    <div class="con-pic new" style="background-image: url('../image/products/pdimg-02.jpg')">
+                                        <i class="far fa-heart like"></i>
+                                    </div>
+                                </a>
+                                <div class="bio d-flex">
+                                    <span>MS搖窈飲</span>
+                                </div>
+                                <div class="bio d-flex">
+                                    <div class="price">
+                                        <span class="none">$3000</span>
+                                        <span class="sale">$2500</span>
+                                    </div>
+                                </div>
+                                <button><i class="fas fa-cart-plus"></i>加入購物車</button>
+                            </div>
+                            <div class="col-md-6 con">
+                                <a href="javascript:void(0)" alt="綠原酸（ACID）">
+                                    <div class="con-pic new" style="background-image: url('../image/products/pdimg-03.jpg')">
+                                        <i class="far fa-heart like"></i>
+                                    </div>
+                                </a>
+                                <div class="bio d-flex">
+                                    <span>綠原酸（ACID）</span>
+                                </div>
+                                <div class="bio d-flex">
+                                    <div class="price">
+                                        <span class="orgi">$3000</span>
+                                    </div>
+                                </div>
+                                <button><i class="fas fa-cart-plus"></i>加入購物車</button>
+                            </div>
+                            <div class="col-md-6 con">
+                                <a href="javascript:void(0)" alt="日本水溶性膳食纖維">
+                                    <div class="con-pic new" style="background-image: url('../image/products/pdimg-01.jpg')">
+                                        <i class="far fa-heart like"></i>
+                                    </div>
+                                </a>
+                                <div class="bio d-flex">
+                                    <span>日本水溶性膳食纖維</span>
+                                </div>
+                                <div class="bio d-flex">
+                                    <div class="price">
+                                        <span class="none">$3000</span>
+                                        <span class="sale">$2500</span>
+                                    </div>
+                                </div>
+                                <button><i class="fas fa-cart-plus"></i>加入購物車</button>
+                            </div>
+                            <div class="col-md-6 con">
+                                <a href="javascript:void(0)" alt="MS搖窈飲">
+                                    <div class="con-pic new" style="background-image: url('../image/products/pdimg-02.jpg')">
+                                        <i class="far fa-heart like"></i>
+                                    </div>
+                                </a>
+                                <div class="bio d-flex">
+                                    <span>MS搖窈飲</span>
+                                </div>
+                                <div class="bio d-flex">
+                                    <div class="price">
+                                        <span class="none">$3000</span>
+                                        <span class="sale">$2500</span>
+                                    </div>
+                                </div>
+                                <button><i class="fas fa-cart-plus"></i>加入購物車</button>
+                            </div>
+                            <div class="col-md-6 con">
+                                <a href="javascript:void(0)" alt="綠原酸（ACID）">
+                                    <div class="con-pic new" style="background-image: url('../image/products/pdimg-03.jpg')">
+                                        <i class="far fa-heart like"></i>
+                                    </div>
+                                </a>
+                                <div class="bio d-flex">
+                                    <span>綠原酸（ACID）</span>
+                                </div>
+                                <div class="bio d-flex">
+                                    <div class="price">
+                                        <span class="orgi">$3000</span>
+                                    </div>
+                                </div>
+                                <button><i class="fas fa-cart-plus"></i>加入購物車</button>
+                            </div>
+                        </div>
+                        <div class="d-flex justify-content-end mt-4 pages-list">
+                            <nav aria-label="...">
+                                <ul class="pagination pagination-md">
+                                    <li class="page-item disabled">
+                                        <a class="page-link" href="#" tabindex="-1"><i class="fas fa-caret-left"></i></a>
+                                    </li>
+                                    <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                                    <li class="page-item">
+                                        <a class="page-link" href="#">2 <span class="sr-only">(current)</span></a>
+                                    </li>
+                                    <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                    <li class="page-item">
+                                        <a class="page-link" href="#"><i class="fas fa-caret-right"></i></a>
+                                    </li>
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+    <!--頁尾-->
+    <footer>
+        <div class="container-fluid">
+            <div class="top">
+                <a href="https://goo.gl/maps/MiNsxCfYf3YURhsNA" target="_blank">
+                    <i class="fas fa-map-marker-alt"></i><span>407620 台中市西屯區市政路500號9樓之1</span>
+                </a>
+                <a href="tel:0422546810">
+                    <i class="fas fa-phone-alt"></i><span>04-2254-6810</span>
+                </a>
+                <a href="mailto:txiltdinc@gmail.com">
+                    <i class="far fa-envelope"></i><span>txiltdinc@gmail.com</span>
+                </a>
+            </div>
+            <div class="bottom">Copyright © 2020 騰璽國際股份有限公司 <span>All Rights Reserved.</span></div>
         </div>
-        <div class="title">掃描</div>
-        <ul>
-            <li class="push_a">掃描腕帶</li>
-        </ul>
-        <div class="title">功能</div>
-        <ul>
-            <li class="pushy-link"><a href="page/Patientlist.html" class="changeSrc">病人清單</a></li>
-            <li class="pushy-link"><a href="page/Monitoring_Submenu.html" class="changeSrc">生理監測</a></li>
-            <li class="pushy-link"><a href="" class="changeSrc">醫囑執行</a></li>
-            <li class="pushy-link"><a href="page/NursingAssessment_Submenu.html" class="changeSrc">護理評估</a></li>
-            <li class="pushy-link"><a href="" class="changeSrc">護理指導</a></li>
-            <li class="pushy-link"><a href="" class="changeSrc">訪視紀錄</a></li>
-            <li class="pushy-link"><a href="index.html">登出</a></li>
-        </ul>
+    </footer>
     </div>
-</nav>
-<div class="content">
-    <!--最新商品-->
-    <section class="shop new-product hidden-xs">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-4 con">
-                    <a href="javascript:void(0)" alt="日本水溶性膳食纖維">
-                        <div class="con-pic new" style="background-image: url('../image/products/pdimg-01.jpg')">
-                            <i class="far fa-heart like"></i>
-                        </div>
-                    </a>
-                    <div class="bio d-flex">
-                        <span>日本水溶性膳食纖維</span>
-                    </div>
-                    <div class="bio d-flex">
-                        <div class="price">
-                            <span class="none">$3000</span>
-                            <span class="sale">$2500</span>
-                        </div>
-                    </div>
-                    <button><i class="fas fa-cart-plus"></i>加入購物車</button>
-                </div>
-                <div class="col-md-4 con">
-                    <a href="javascript:void(0)" alt="MS搖窈飲">
-                        <div class="con-pic new" style="background-image: url('../image/products/pdimg-02.jpg')">
-                            <i class="far fa-heart like"></i>
-                        </div>
-                    </a>
-                    <div class="bio d-flex">
-                        <span>MS搖窈飲</span>
-                    </div>
-                    <div class="bio d-flex">
-                        <div class="price">
-                            <span class="none">$3000</span>
-                            <span class="sale">$2500</span>
-                        </div>
-                    </div>
-                    <button><i class="fas fa-cart-plus"></i>加入購物車</button>
-                </div>
-                <div class="col-md-4 con">
-                    <a href="javascript:void(0)" alt="綠原酸（ACID）">
-                        <div class="con-pic new" style="background-image: url('../image/products/pdimg-03.jpg')">
-                            <i class="far fa-heart like"></i>
-                        </div>
-                    </a>
-                    <div class="bio d-flex">
-                        <span>綠原酸（ACID）</span>
-                    </div>
-                    <div class="bio d-flex">
-                        <div class="price">
-                            <span class="orgi">$3000</span>
-                        </div>
-                    </div>
-                    <button><i class="fas fa-cart-plus"></i>加入購物車</button>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!--本日精選-->
-    <section class="shop hidden-xs">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-4 con">
-                    <a href="javascript:void(0)" alt="日本水溶性膳食纖維">
-                        <div class="con-pic new" style="background-image: url('../image/products/pdimg-01.jpg')">
-                            <i class="far fa-heart like"></i>
-                        </div>
-                    </a>
-                    <div class="bio d-flex">
-                        <span>日本水溶性膳食纖維</span>
-                    </div>
-                    <div class="bio d-flex">
-                        <div class="price">
-                            <span class="none">$3000</span>
-                            <span class="sale">$2500</span>
-                        </div>
-                    </div>
-                    <button><i class="fas fa-cart-plus"></i>加入購物車</button>
-                </div>
-                <div class="col-md-4 con">
-                    <a href="javascript:void(0)" alt="MS搖窈飲">
-                        <div class="con-pic new" style="background-image: url('../image/products/pdimg-02.jpg')">
-                            <i class="far fa-heart like"></i>
-                        </div>
-                    </a>
-                    <div class="bio d-flex">
-                        <span>MS搖窈飲</span>
-                    </div>
-                    <div class="bio d-flex">
-                        <div class="price">
-                            <span class="none">$3000</span>
-                            <span class="sale">$2500</span>
-                        </div>
-                    </div>
-                    <button><i class="fas fa-cart-plus"></i>加入購物車</button>
-                </div>
-                <div class="col-md-4 con">
-                    <a href="javascript:void(0)" alt="綠原酸（ACID）">
-                        <div class="con-pic new" style="background-image: url('../image/products/pdimg-03.jpg')">
-                            <i class="far fa-heart like"></i>
-                        </div>
-                    </a>
-                    <div class="bio d-flex">
-                        <span>綠原酸（ACID）</span>
-                    </div>
-                    <div class="bio d-flex">
-                        <div class="price">
-                            <span class="orgi">$3000</span>
-                        </div>
-                    </div>
-                    <button><i class="fas fa-cart-plus"></i>加入購物車</button>
-                </div>
-            </div>
-        </div>
-    </section>
 </div>
-<!--頁尾-->
-<footer>
-    <div class="container-fluid">
-        <div class="top">
-            <a href="https://goo.gl/maps/MiNsxCfYf3YURhsNA" target="_blank">
-                <i class="fas fa-map-marker-alt"></i><span>407620 台中市西屯區市政路500號9樓之1</span>
-            </a>
-            <a href="tel:0422546810">
-                <i class="fas fa-phone-alt"></i><span>04-2254-6810</span>
-            </a>
-            <a href="mailto:txiltdinc@gmail.com">
-                <i class="far fa-envelope"></i><span>txiltdinc@gmail.com</span>
-            </a>
-        </div>
-        <div class="bottom">Copyright © 2020 騰璽國際股份有限公司 <span>All Rights Reserved.</span></div>
-    </div>
-</footer>
 <!--JS -->
 <script type="text/javascript" src="../plugins/jquery/jquery-3.4.1.min.js"></script>
 <script type="text/javascript" src="../plugins/jquery/jquery.easing.min.js"></script>
@@ -211,57 +309,31 @@
 <script type="text/javascript" src="../plugins/scrollreveal.min.js"></script>
 <script type="text/javascript" src="../js/custom.js"></script>
 <script>
-    /*輪播*/
-    $('.slick-item').slick({
-        dots: false,
-        autoplay: true,
-        arrows:true,
-    });
     // Scroll reveal calls
     window.sr = ScrollReveal();
 
-    sr.reveal('.shop .con:nth-child(1)', {
+    sr.reveal('.shop .con:nth-child(even)', {
         delay: 200,
-        scale: 0,
-        reset:true
+        scale: 0
     });
-    sr.reveal('.shop .con:nth-child(2)', {
+    sr.reveal('.shop .con:nth-child(odd)', {
         delay: 400,
-        scale: 0,
-        reset:true
+        scale: 0
     });
-    sr.reveal('.shop .con:nth-child(3)', {
-        delay: 600,
-        scale: 0,
-        reset:true
-    });
-    sr.reveal('.join .title', {
-        delay: 150,
-        scale: 0,
-        reset:true
-    });
-    sr.reveal('.join .subtitle', {
-        delay: 350,
-        scale: 0,
-        reset:true
-    });
-    sr.reveal('.join .p', {
-        delay: 550,
-        scale: 0,
-        reset:true
-    });
-    sr.reveal('.join .btn', {
-        distance : '90px',
-        easing   : 'ease-in-out',
-        delay: 650,
-        opacity:0,
-        reset:true
-    });
-    sr.reveal('.join', {
-        distance : '90px',
-        easing   : 'ease-in-out',
-        opacity:0,
-        reset:true
+    function testAnim(shake) {
+        $('.cart, .phone-cart').removeClass('shake').addClass('shake'+' animated').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function(){
+            $(this).removeClass('shake');
+        });
+    };
+
+    $(document).ready(function(){
+        $('.shop .con button').click(function(e){
+            e.preventDefault();
+            var anim = $('.shake');
+            testAnim(anim);
+        });
+
+
     });
 
 </script>

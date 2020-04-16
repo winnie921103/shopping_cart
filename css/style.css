@@ -359,7 +359,7 @@ footer a:hover{
     -webkit-transition: all .2s ease-in-out;
     transition: all .2s ease-in-out;
 }
-.shop .con .con-pic.new::before {
+.shop .con .con-pic.pick::before {
     content: "本日精選";
     position: absolute;
     background-color: #B79C61;
@@ -374,7 +374,7 @@ footer a:hover{
     z-index: 2;
     padding: 10px 5px;
 }
-.shop.new-product .con .con-pic.new::before {
+.shop .con .con-pic.new::before {
     content: "最新商品";
     position: absolute;
     background-color: #dc3545;
@@ -427,7 +427,7 @@ footer a:hover{
     100% {top:20px}
 }
 .shop .con .bio {
-    background: #e8e2d5;
+    background: #efe5cd;
 }
 .shop .con .bio span {
     text-align: center;
@@ -474,7 +474,26 @@ footer a:hover{
     margin: 0 auto;
     font-weight: bold;
 }
-.cart-con .title {
+.cart-con .col-lg-12{
+    padding: 0;
+}
+.online-shop .order-by{
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 10px;
+}
+.online-shop .order-by select {
+    width: 50%;
+    border-radius: 5px;
+    background: #C9CCD3;
+    background-image: linear-gradient(-180deg, rgba(255,255,255,0.50) 0%, rgba(0,0,0,0.50) 100%);
+    background-blend-mode: lighten;
+    box-shadow: 0px 0px 5px 0px rgba(50,50,50,0.2);
+    border: 1px solid #a5a5a5;
+    padding: 6px 10px;
+    margin-top: 10px;
+}
+.online-shop .cart-con .title {
     text-align: center;
     font-size: 24px;
     padding: 16px 0;
@@ -548,7 +567,9 @@ footer a:hover{
     font-size: 20px;
     font-weight: bold;
     color: #625434;
+    margin-right: 10px;
 }
+
 .cart-con .delet {
     -webkit-transition: all .2s ease-in-out;
     transition: all .2s ease-in-out;
@@ -573,9 +594,7 @@ footer a:hover{
     border-bottom: 1px #f1ebe0 solid;
     margin-bottom: 15px;
 }
-.cart-con .right-con .top-con {
-    padding: 0 20px;
-}
+
 .cart-con .right-con .top-con .subtotal, .cart-con .right-con .top-con .freight, .cart-con .right-con .top-con .total {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -585,9 +604,9 @@ footer a:hover{
     justify-content: space-between;
     color: #f1ebe0;
     line-height: 1;
+    padding: 10px;
 }
 .cart-con .right-con .top-con .total {
-    padding: 5px 0;
     font-size: 20px;
     font-weight: bold;
     color: #fff;
@@ -603,9 +622,94 @@ footer a:hover{
     font-size: 24px;
     font-weight: bold;
 }
-/*online-shop*/
-.online-shop .content{
+/*online-shop線上購物*/
+.online-shop .content-wrap{
     margin-top: 85px;
+}
+.page-item.active .page-link {
+    background-color: #493c23;
+    border-color: #453922;
+}
+.page-link{
+    color:#856404 ;
+}
+.page-link:hover{
+    color:#b79c61 ;
+}
+.online-shop .title {
+    text-align: center;
+    padding: .75rem 1.25rem;
+    margin-bottom: 0;
+    background-color: #856404;
+    border-bottom: 1px solid rgba(0,0,0,.125);
+    color: #fff;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+.online-shop .list{
+    margin-bottom: 2em;
+}
+.card-header{
+    background: #b79c61;
+    color: #fff;
+}
+.accordion li{
+    padding: 0.75em;
+    background: #e8e2d5;
+}
+.accordion li:not(:last-child){
+    border-bottom: 1px solid rgba(213, 197, 138, 0.3);
+}
+.accordion li a{
+    padding-left: 2em;
+    color: #856404;
+}
+.online-shop .titel_btn {
+    position: relative;
+    width: 100%;
+    cursor: pointer;
+}
+.online-shop .titel_btn::before {
+    content: "";
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translate(0px,-50%);
+    width: 20px;
+    height: 3px;
+    border-radius: 2px;
+    background-color: #ffffff;
+}
+.online-shop .titel_btn::after {
+    content: "";
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translate(0px,-50%) rotate(0deg);
+    width: 20px;
+    height: 3px;
+    border-radius: 2px;
+    background-color: #ffffff;
+    animation: rotate_back 0.5s forwards;
+}
+.online-shop .titel_btn.collapsed::after{
+    animation: rotate 0.5s forwards;
+}
+@keyframes rotate{
+    from{
+        transform: translate(0px,-50%) rotate(0deg);
+    }
+    to{
+        transform: translate(0px,-50%) rotate(90deg);
+    }
+}
+@keyframes rotate_back{
+    from{
+        transform: translate(0px,-50%) rotate(90deg);
+    }
+    to{
+        transform: translate(0px,-50%) rotate(0deg);
+    }
 }
 /*****RWD****/
 @media (max-width: 991px) {
@@ -618,14 +722,14 @@ footer a:hover{
     }
     #mainNav .phone-cart {
         display: block;
-        -webkit-animation-duration: .3s;
-        animation-duration: .3s;
+        -webkit-animation-duration: .5s;
+        animation-duration: .5s;
         cursor: pointer;
     }
     #mainNav .cart {
         display: none;
-        -webkit-animation-duration: 1s;
-        animation-duration: 1s;
+        -webkit-animation-duration: .5s;
+        animation-duration: .5s;
     }
 }
 @media (min-width: 544px) {
@@ -680,14 +784,14 @@ footer a:hover{
     }
     #mainNav .phone-cart.shake {
         display: block;
-        -webkit-animation-duration: 1s;
-        animation-duration: 1s;
+        -webkit-animation-duration: .5s;
+        animation-duration: .5s;
         cursor: pointer;
     }
     #mainNav .cart {
         display: none;
-        -webkit-animation-duration:1s;
-        animation-duration:1s;
+        -webkit-animation-duration:.5s;
+        animation-duration:.5s;
     }
     .join .subtitle{
         font-size: 1em;
