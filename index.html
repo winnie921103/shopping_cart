@@ -91,7 +91,7 @@
             <i class="fas fa-bars"></i>
         </button>
         <a class="navbar-brand js-scroll-trigger" href="index.html"><img src="image/index/logo2.svg" width="180" alt="logo"></a>
-        <span class="phone-cart menu-btn"><div class="icon_cart"></div><i class="fas fa-shopping-cart"></i><span>0</span></span>
+        <span class="phone-cart menu-btn"><div class="icon_cart"></div><i class="fas fa-shopping-cart"></i>購物車<span>0</span></span>
         <div class="collapse navbar-collapse" id="navbarResponsive">
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item">
@@ -356,16 +356,16 @@
         opacity:0,
         reset:true
     });
-    function testAnim(swing) {
-        $('.cart, .phone-cart').removeClass('swing').addClass('swing'+' animated').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function(){
-            $(this).removeClass('swing');
+    function testAnim(shake) {
+        $('.cart, .phone-cart').removeClass('shake').addClass('shake'+' animated').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function(){
+            $(this).removeClass('shake');
         });
     };
 
     $(document).ready(function(){
         $('.shop .con button').click(function(e){
             e.preventDefault();
-            var anim = $('.swing');
+            var anim = $('.shake');
             testAnim(anim);
         });
 
