@@ -356,16 +356,16 @@
         opacity:0,
         reset:true
     });
-    function testAnim(shake) {
-        $('.cart, .phone-cart').removeClass('shake').addClass('shake'+' animated').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function(){
-            $(this).removeClass('shake');
+    function testAnim(swing) {
+        $('.cart, .phone-cart').removeClass('swing').addClass('swing'+' animated').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function(){
+            $(this).removeClass('swing');
         });
     };
 
     $(document).ready(function(){
         $('.shop .con button').click(function(e){
             e.preventDefault();
-            var anim = $('.shake');
+            var anim = $('.swing');
             testAnim(anim);
         });
 
