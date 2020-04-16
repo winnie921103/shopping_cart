@@ -58,21 +58,7 @@
         $(".slick-active .text .title").removeClass("animated fadeInUp").addClass("animated fadeInUp");
         $(".slick-active .text .p").removeClass("animated fadeInDown").addClass("animated fadeInDown");
 
-        function testAnim(shake) {
-            $('.cart, .phone-cart').removeClass('shake').addClass('shake'+' animated').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function(){
-                $(this).removeClass('shake');
-            });
-        };
 
-        $(document).ready(function(){
-            $('.shop .con button').click(function(e){
-                e.preventDefault();
-                var anim = $('.shake');
-                testAnim(anim);
-            });
-
-
-        });
         //購物車刪除
         function confirmDelet(e) {
             var r = confirm("確定要刪除?");
