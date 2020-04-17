@@ -848,35 +848,6 @@ footer a:hover{
     height: 56px;
     margin-bottom: 15px;
 }
-#login .login-con .form-check {
-    padding-left: 0;
-}
-.cc {
-    display: block;
-    position: relative;
-    padding-left: 30px;
-    margin-bottom: 12px;
-    cursor: pointer;
-    font-size: 20px;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
-    color: #fff;
-}
-.cc input {
-    position: absolute;
-    opacity: 0;
-    cursor: pointer;
-}
-.cc .checkmark {
-    position: absolute;
-    top: 7px;
-    left: 0;
-    height: 16px;
-    width: 16px;
-    background-color: #eee;
-}
 #login .login-con button {
     background-color: #d9caab;
     color: #625434;
@@ -971,7 +942,7 @@ footer a:hover{
 .register #login .login-con h2{
     color:#493c23 ;
 }
-.register .shop{
+.register .content-wrap .shop{
     padding: 1%;
     height: 100%!important;
 }
@@ -1000,6 +971,60 @@ footer a:hover{
 }
 .register .modal-body p{
     padding-left: 15px;
+}
+/*會員中心*/
+.memberwrap {
+    padding: 3%;
+    position: relative;
+    background: url("../image/index/about-bg.jpg")no-repeat center;
+    background-size: cover;
+    background-attachment:fixed;
+}
+.membercenter .content-wrap{
+    margin-top: 85px;
+}
+.membercenter .memberinfo{
+    margin: 0 auto;
+}
+.membercenter .memberinfo .top{
+    margin: 0 auto;
+    background-image: linear-gradient(120deg, #c1a669 0%, #9b834e 100%);
+    padding: 5%;
+    border-radius: 10px;
+    color: #fff;
+    box-shadow: 0px 2px 5px 2px rgba(0,0,0,0.5);
+    position: relative;
+    z-index: 2;
+}
+.membercenter .memberinfo .top .user{
+    display: flex;
+    text-align: center;
+    width: 100%;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.membercenter .memberinfo .top .user .username{
+    width: 100%;
+}
+.membercenter .memberinfo .top img{
+  width: 20%;
+}
+.membercenter .memberinfo .level{
+    font-size: 2.5em;
+}
+.membercenter .progress-bar{
+    background: #473a22;
+}
+.membercenter .middle{
+    background: #fff;
+    box-shadow: 1px 2px 5px 2px rgba(0,0,0,0.1);
+    position: relative;
+    z-index: 1;
+    margin: 0 auto 10%;
+    border-radius: 10px;
+    padding: 4%;
 }
 /*===========================RWD==============================*/
 @media (max-width: 991px) {
@@ -1068,9 +1093,21 @@ footer a:hover{
     }
 }
 @media (min-width: 992px) {
-
+    .register #login .shop {
+        padding: 1%;
+        height: 100%;
+    }
 }
 @media (min-width: 1200px) {
+    footer .top{
+        width: 65%;
+    }
+}
+@media (min-width: 1920px) {
+    .register .content-wrap .shop {
+        padding: 6% 3% 3%;
+        height: calc(100vh - 159.89px);
+    }
     footer .top{
         width: 65%;
     }

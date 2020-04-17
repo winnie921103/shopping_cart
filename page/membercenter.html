@@ -18,7 +18,7 @@
     <link rel="stylesheet" type="text/css" href="../css/style.css">
 
 </head>
-<body class="login">
+<body class="membercenter">
 <!-- Pushy Menu -->
 <nav class="pushy pushy-right">
     <div class="pushy-content cart-con">
@@ -112,45 +112,39 @@
 <!-- content -->
 <div class="page-wrapper" id="container">
     <div class="content-wrap">
-        <section class="shop">
+        <div class="memberwrap">
+        <section class="membercard">
             <div class="container">
-                <div id="login" class="d-flex">
-                    <div class="socail-con">
-                        <div class="title"> <span>連結社群帳號</span></div>
-                        <div class="s-btn fb"><img src="../image/index/facebook.png" width="100" alt=""><span>快速入</span></div>
-                        <div class="s-btn line"><img src="../image/index/line.png" width="100" alt=""><span>快速登入</span></div>
+                <div class="memberinfo col-sm-10 col-lg-10">
+                    <div class="top">
+                        <div class="user">
+                            <img src="../image/member/user.png" alt="" class="mb-4">
+                            <div class="username">Hi!<span id="username">王小明</span></div>
+                        </div>
+                        <div class="level mb-3">LV2</div>
+                        <div class="mb-3"><span>目前:</span>2500/3000 <span>還差500元成為聯盟會員</span></div>
+                        <div class="progress mb-3">
+                            <div class="progress-bar" role="progressbar" style="width: 80%" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+
                     </div>
-                    <form class="login-con" action="" method="">
-                        <div class="top">
-                            <h2>會員登入</h2>
-                        </div>
-                        <div class="top">
-                            <div class="input-group">
-                                <div class="input-group-prepend">
-                                    <span class="input-group-text" id=""><i class="fas fa-user-alt"></i></span>
-                                </div>
-                                <input type="text" placeholder="電子信箱/手機號碼" class="form-control" aria-label="Default" aria-describedby="inputGroup-sizing-default">
-                            </div>
-                            <div class="input-group">
-                                <div class="input-group-prepend">
-                                    <span class="input-group-text"><i class="fas fa-key"></i></span>
-                                </div>
-                                <input type="password" placeholder="請輸入使用者密碼" class="form-control" aria-label="Default" aria-describedby="inputGroup-sizing-default">
-                            </div>
-                            <div class="choiceBox">
-                                        <input id="form2_1" name="A3" type="checkbox">
-                                        <label for="form2_1">記住我</label>
-                            </div>
-                        </div>
-                        <button type="button" onclick="location.href='../page/membercenter.html'">登入帳號</button>
-                        <div class="bottom">
-                            <a href=""><i class="fas fa-lock"></i>忘記密碼?</a>
-                            <a href="../page/register.html"><i class="fas fa-user-plus"></i>註冊新會員</a>
-                        </div>
-                    </form>
+                </div>
+                <div class="middle col-sm-12 col-lg-11">
+                    <div class="list">
+                        <a href="">會員資料</a>
+                        <a href="">訂單明細</a>
+                    </div>
+                    <div><img src="../image/member/qrcode.png" alt=""></div>
                 </div>
             </div>
         </section>
+        <section class="membercard" id="memberdata" style="display: none">
+
+        </section>
+        <section class="membercard" id="order" style="display: none">
+
+        </section>
+        </div>
     <!--頁尾-->
     <footer>
         <div class="container-fluid">
