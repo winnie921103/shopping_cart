@@ -18,7 +18,7 @@
     <link rel="stylesheet" type="text/css" href="../css/style.css">
 
 </head>
-<body class="login">
+<body class="login register">
 <!-- Pushy Menu -->
 <nav class="pushy pushy-right">
     <div class="pushy-content cart-con">
@@ -115,38 +115,74 @@
         <section class="shop">
             <div class="container">
                 <div id="login" class="d-flex">
-                    <form class="login-con" action="" method="">
+                    <form class="login-con needs-validation" action="" method="" novalidate>
                         <div class="top">
-                            <h2>會員登入</h2>
+                            <h2>註冊</h2>
                         </div>
                         <div class="top">
-                            <div class="input-group">
-                                <div class="input-group-prepend">
-                                    <span class="input-group-text" id=""><i class="fas fa-user-alt"></i></span>
+                                <div class="form-group row">
+                                    <div class="col-sm-12 mb-4">
+                                        <label for="name" class="mb-2">姓名*</label>
+                                        <input type="text" class="form-control" id="name" placeholder="請輸入姓名" value="" required>
+                                        <div class="invalid-feedback">
+                                           姓名不可空白!
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-12 mb-4">
+                                        <label for="email" class="mb-2">電子郵件*</label>
+                                        <input type="text" class="form-control" id="email" placeholder="請輸入電子郵件" value="" required>
+                                        <div class="invalid-feedback">
+                                            電子郵件不可空白!
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-12 mb-4">
+                                        <label for="phone" class="mb-2">手機</label>
+                                        <input type="text" class="form-control" id="phone" placeholder="請輸入手機" value="" maxlength="10" onkeyup="this.value=this.value.replace(/\D/g,'')">
+                                        <div class="invalid-feedback">
+                                            手機不可空白!
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-12 mb-4">
+                                        <label for="bithdate" class="mb-2">生日</label>
+                                        <input type="date" class="form-control" id="bithdate" placeholder="請輸入生日" value="">
+                                        <div class="invalid-feedback">
+                                            生日不可空白!
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-12 mb-4">
+                                        <label for="password" class="mb-2">密碼*</label>
+                                        <input type="text" class="form-control" id="password" placeholder="請輸入密碼" value="" required>
+                                        <div class="invalid-feedback">
+                                            密碼不可空白!
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-12 mb-4">
+                                        <label for="confirmpw" class="mb-2">密碼確認*</label>
+                                        <input type="text" class="form-control" id="confirmpw" placeholder="請再次輸入密碼確認" value="" required>
+                                        <div class="invalid-feedback">
+                                            密碼不可空白!
+                                        </div>
+                                    </div>
                                 </div>
-                                <input type="text" placeholder="電子信箱/手機號碼" class="form-control" aria-label="Default" aria-describedby="inputGroup-sizing-default">
-                            </div>
-                            <div class="input-group">
-                                <div class="input-group-prepend">
-                                    <span class="input-group-text"><i class="fas fa-key"></i></span>
+                                <div class="form-group">
+                                    <div class="form-check choiceBox">
+                                        <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+                                        <label class="form-check-label" for="invalidCheck">
+                                            註冊表示同意與
+                                        </label>
+                                        <div class="invalid-feedback">
+                                           請先勾選同意
+                                        </div>
+                                    </div>
                                 </div>
-                                <input type="password" placeholder="請輸入使用者密碼" class="form-control" aria-label="Default" aria-describedby="inputGroup-sizing-default">
-                            </div>
-                            <div class="choiceBox">
-                                        <input id="form2_1" name="A3" type="checkbox">
-                                        <label for="form2_1">記住我</label>
-                            </div>
-                        </div>
-                        <button type="submit">登入帳號</button>
-                        <div class="bottom">
-                            <a href=""><i class="fas fa-lock"></i>忘記密碼?</a>
-                            <a href=""><i class="fas fa-user-plus"></i>註冊新會員</a>
+                            <button type="submit">加入會員</button>
+                            <div>我已經有會員帳號了? <a href="../page/login.html">回登入頁面</a></div>
                         </div>
                     </form>
                     <div class="socail-con">
                         <div class="title"> <span>連結社群帳號</span></div>
-                        <div class="s-btn fb"><img src="../image/index/facebook.png" width="100" alt=""><span>快速登入</span></div>
-                        <div class="s-btn line"><img src="../image/index/line.png" width="100" alt=""><span>快速登入</span></div>
+                        <div class="s-btn fb"><img src="../image/index/facebook.png" width="100" alt=""><span>快速註冊</span></div>
+                        <div class="s-btn line"><img src="../image/index/line.png" width="100" alt=""><span>快速註冊</span></div>
                     </div>
                 </div>
             </div>
@@ -206,6 +242,24 @@
 
 
     });
+    // Example starter JavaScript for disabling form submissions if there are invalid fields
+    (function() {
+        'use strict';
+        window.addEventListener('load', function() {
+            // Fetch all the forms we want to apply custom Bootstrap validation styles to
+            var forms = document.getElementsByClassName('needs-validation');
+            // Loop over them and prevent submission
+            var validation = Array.prototype.filter.call(forms, function(form) {
+                form.addEventListener('submit', function(event) {
+                    if (form.checkValidity() === false) {
+                        event.preventDefault();
+                        event.stopPropagation();
+                    }
+                    form.classList.add('was-validated');
+                }, false);
+            });
+        }, false);
+    })();
 
 </script>
 </body>

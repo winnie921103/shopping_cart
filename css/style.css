@@ -782,7 +782,12 @@ footer a:hover{
     width: 100%;
     padding: 30px 20px;
     background-image: linear-gradient(to top, #fdfcfb 0%, #edeae3 100%);
-
+    white-space: nowrap;
+    -webkit-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out;
+}
+#login .login-con .bottom i{
+    margin-right: 5px;
 }
 #login .login-con .bottom a:hover{
     color:#625434 ;
@@ -951,6 +956,21 @@ footer a:hover{
 .login .shop{
     padding: 6% 3% 3%;
     height: calc(100vh - 159.89px);
+}
+/*註冊*/
+.register #login .login-con .top {
+    background-color: #f7f6f4;
+    padding: 15px 30px;
+}
+.register #login .login-con h2{
+    color:#493c23 ;
+}
+.register .shop{
+    padding: 1%;
+    height: 100%!important;
+}
+.register #login .login-con h2{
+    margin: 0;
 }
 /*===========================RWD==============================*/
 @media (max-width: 991px) {
