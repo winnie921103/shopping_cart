@@ -985,6 +985,16 @@ footer a:hover{
     width: auto;
     font-size: 0.95em;
 }
+.register .modal-dialog{
+    max-width:1200px ;
+}
+.register .modal-body{
+    max-height: 650px;
+    overflow-y: scroll;
+}
+.register .modal-body p{
+    padding-left: 15px;
+}
 /*===========================RWD==============================*/
 @media (max-width: 991px) {
     #mainNav.navbar-shrink {
