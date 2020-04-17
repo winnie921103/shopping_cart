@@ -12,6 +12,9 @@ body{
     width: 100%;
     overflow-x: hidden;
 }
+button{
+    outline: none!important;
+}
 /*checkbox*/
 .choiceBox  input+label {
     position: relative;
@@ -815,10 +818,6 @@ footer a:hover{
     max-width: 450px;
     min-width: 320px;
 }
-#login .login-con .top {
-    background-color: #3F5D45;
-    padding: 15px 30px;
-}
 #login .login-con h2 {
     color: #fff;
     margin-bottom: 40px;
@@ -837,7 +836,7 @@ footer a:hover{
     height: 100%;
     border-radius: 0;
     border: 0;
-    font-size: 18px;
+    font-size: 1em;
 }
 #login .login-con .input-group {
     height: 56px;
@@ -876,7 +875,7 @@ footer a:hover{
     background-color: #d9caab;
     color: #625434;
     border: 0 solid #000;
-    font-size: 24px;
+    font-size: 1.2em;
     padding: 17px 0;
     width: 100%;
     font-family: 'Microsoft JhengHei', serif;
@@ -958,9 +957,10 @@ footer a:hover{
     height: calc(100vh - 159.89px);
 }
 /*註冊*/
+
 .register #login .login-con .top {
     background-color: #f7f6f4;
-    padding: 15px 30px;
+    padding: 15px;
 }
 .register #login .login-con h2{
     color:#493c23 ;
@@ -971,6 +971,19 @@ footer a:hover{
 }
 .register #login .login-con h2{
     margin: 0;
+}
+.register .return{
+    margin-top: 1.2em;
+}
+.register #login .login-con .agree{
+    color: #493c23;
+    font-size: 0.8em;
+}
+.register #login .login-con .agree button{
+    background: none;
+    color:#493c23 ;
+    width: auto;
+    font-size: 0.95em;
 }
 /*===========================RWD==============================*/
 @media (max-width: 991px) {
@@ -1049,8 +1062,16 @@ footer a:hover{
 
 /*通用 ========================= 平板以下 (手機、平板)*/
 @media only screen and (max-width : 767px){
+    .register .container{
+        padding: 0;
+    }
+    #login .login-con{
+        max-width: 100%;
+        min-width: 100%;
+    }
     #login .login-con h2{
-        margin: 20px 0;
+        margin: 0;
+        font-size: 1.5em;
     }
     #login{
         flex-wrap: wrap;
