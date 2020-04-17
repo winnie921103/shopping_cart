@@ -262,7 +262,13 @@ button{
     margin-right: 10px;
     bottom: 0;
 }
-
+#mainNav.navbar-shrink {
+    border-bottom: 5px solid #B79C61;
+    background-color: #fff;
+    padding: 5px 8px;
+    -webkit-box-shadow: 0px 1px 15px rgba(0,0,0,0.3);
+    box-shadow: 0px 1px 15px rgba(0,0,0,0.3);
+}
 #mainNav .navbar-nav>li.nav-item>a.nav-link, #mainNav .navbar-nav>li.nav-item>a.nav-link:focus {
     color: #B79C61;
 }
