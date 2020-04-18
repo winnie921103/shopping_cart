@@ -919,7 +919,7 @@ footer a:hover{
     margin-left: -10px;
 }
 #login .socail-con .s-btn span{
-  color: #fff;
+    color: #fff;
     font-size: 1.2em;
     margin-left: 5px;
 }
@@ -988,17 +988,18 @@ footer a:hover{
 }
 .membercenter .memberinfo .top{
     margin: 0 auto;
-    background-image: linear-gradient(120deg, #c1a669 0%, #9b834e 100%);
+    color: #fcfcfa;
+    background: linear-gradient(to bottom, rgba(255,255,255,0.15) 0%, rgba(0,0,0,0.15) 100%), radial-gradient(at top center, rgba(255,255,255,0.40) 0%, rgba(0,0,0,0.40) 120%) #989898;
+    background-blend-mode: multiply,multiply;
     padding: 5%;
     border-radius: 10px;
-    color: #fff;
-    box-shadow: 0px 2px 5px 2px rgba(0,0,0,0.5);
+    box-shadow: 0px 2px 5px 2px rgba(0,0,0,0.1);
     position: relative;
     z-index: 2;
 }
 .membercenter .memberinfo .top .user{
     display: flex;
-    text-align: center;
+    text-align: right;
     width: 100%;
     margin: 0 auto;
     justify-content: center;
@@ -1009,22 +1010,121 @@ footer a:hover{
     width: 100%;
 }
 .membercenter .memberinfo .top img{
-  width: 20%;
+    width: 20%;
 }
 .membercenter .memberinfo .level{
-    font-size: 2.5em;
+    font-size: 1.5em;
+    width: 100%;
+    display: flex;
+    align-items: center;
 }
 .membercenter .progress-bar{
-    background: #473a22;
+    background: #fbd06d;
 }
 .membercenter .middle{
     background: #fff;
     box-shadow: 1px 2px 5px 2px rgba(0,0,0,0.1);
     position: relative;
     z-index: 1;
-    margin: 0 auto 10%;
+    margin: -4% auto 10%;
     border-radius: 10px;
     padding: 4%;
+}
+.membercenter .middle .list{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 4%;
+    flex-wrap: wrap;
+}
+.membercenter .middle .list i{
+    margin-right: 5px;
+}
+.membercenter .middle .list a{
+    display: flex;
+    padding: 2em;
+    background: #eeee;
+    border-radius: 10px;
+    color: #696969;
+    margin: 1%;
+    white-space: nowrap;
+    width: 190px;
+}
+.membercenter .now{
+    width: 100%;
+    display: inline-block;
+    font-size: 1.2em;
+    padding: 10px 0;
+    color: #cacaca;
+}
+.membercenter .now-number{
+    font-weight: bold;
+    color: #fff;
+}
+.membercenter .need-number{
+    color: #c5a867;
+    font-size: 1.5em;
+    margin: 5px;
+    font-weight: bold;
+}
+.membercenter .money{
+    text-align: right;
+}
+.level_icon{
+    background: url("../image/member/level.png") no-repeat center;
+    background-size: 100% auto;
+    width: 32px;
+    height: 32px;
+}
+.membercenter .title{
+    text-align: center;
+    position: relative;
+    margin: 30px 0;
+
+}
+.membercenter .title span{
+    font-size: 1.2em;
+    color: #625434;
+    background-image: linear-gradient(120deg, #f6e8cd 0%, #ead29c 100%);
+    margin: 10px;
+    padding: 10px 5px;
+    position: relative;
+    z-index: 2;
+}
+.membercenter .title::before {
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 1px;
+    background-color: #625434;
+    top: 50%;
+    left: 0;
+    z-index: 1;
+}
+.membercenter .money_wrap{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    font-family: "Roboto", sans-serif;
+}
+.membercenter .money-con{
+    width: 50%;
+    text-align: center;
+    line-height: 30px;
+    font-size: 1.3em;
+}
+.membercenter .money-con i{
+    margin-right: 5px;
+}
+.membercenter .fa-coins{
+    color: #ffc107;
+}
+.membercenter .fa-money-bill-alt{
+    color: #28a745;
+}
+.membercenter .money-con .cash,.membercenter .money-con .points{
+    padding-left: 5px;
 }
 /*===========================RWD==============================*/
 @media (max-width: 991px) {
