@@ -777,7 +777,7 @@ footer a:hover{
     }
 }
 /*登入*/
-#login .login-con .bottom{
+#form-wrap .login-con .bottom{
     display: flex;
     text-align: center;
     font-weight: bold;
@@ -785,7 +785,7 @@ footer a:hover{
     font-size: 1.2em;
     justify-content: space-evenly;
 }
-#login .login-con .bottom a{
+#form-wrap .login-con .bottom a{
     text-decoration: none;
     color:#625434 ;
     width: 100%;
@@ -795,10 +795,10 @@ footer a:hover{
     -webkit-transition: all .2s ease-in-out;
     transition: all .2s ease-in-out;
 }
-#login .login-con .bottom i{
+#form-wrap .login-con .bottom i{
     margin-right: 5px;
 }
-#login .login-con .bottom a:hover{
+#form-wrap .login-con .bottom a:hover{
     color:#625434 ;
     -webkit-transform: scale(1.05, 1.05);
     transform: scale(1.05, 1.05);
@@ -808,7 +808,7 @@ footer a:hover{
 .login .content-wrap{
     padding-top: 85px;
 }
-#login {
+#form-wrap {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -819,12 +819,12 @@ footer a:hover{
     -ms-flex-align: center;
     align-items: center;
 }
-#login .login-con {
+#form-wrap .login-con {
     width: 50%;
     max-width: 450px;
     min-width: 320px;
 }
-#login .login-con h2 {
+#form-wrap .login-con h2 {
     color: #fff;
     margin-bottom: 40px;
     margin-top: 30px;
@@ -833,22 +833,22 @@ footer a:hover{
     font-family: 'Microsoft JhengHei', serif;
     font-size: 2.2em;
 }
-#login .login-con .top {
+#form-wrap .login-con .top {
     background-color: #625434;
     padding: 15px 30px;
 }
-#login .login-con .input-group input {
+#form-wrap .login-con .input-group input {
     background-color: #f7f6f4;
     height: 100%;
     border-radius: 0;
     border: 0;
     font-size: 1em;
 }
-#login .login-con .input-group {
+#form-wrap .login-con .input-group {
     height: 56px;
     margin-bottom: 15px;
 }
-#login .login-con button {
+#form-wrap .login-con button {
     background-color: #d9caab;
     color: #625434;
     border: 0 solid #000;
@@ -861,18 +861,18 @@ footer a:hover{
     transition: all .2s ease-in-out;
     cursor: pointer;
 }
-#login .socail-con {
+#form-wrap .socail-con {
     background-color: #edeae3;
     width: 30%;
     max-width: 400px;
     padding: 35px 30px;
 }
-#login .socail-con .title {
+#form-wrap .socail-con .title {
     text-align: center;
     position: relative;
     margin-bottom: 30px;
 }
-#login .socail-con .title span {
+#form-wrap .socail-con .title span {
     font-size: 1.2em;
     color: #625434;
     background-color: #edeae3;
@@ -880,7 +880,7 @@ footer a:hover{
     z-index: 2;
     position: relative;
 }
-#login .socail-con .title::before {
+#form-wrap .socail-con .title::before {
     position: absolute;
     content: '';
     width: 100%;
@@ -890,7 +890,7 @@ footer a:hover{
     left: 0;
     z-index: 1;
 }
-#login .socail-con .s-btn {
+#form-wrap .socail-con .s-btn {
     background-color: #fff;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -907,26 +907,26 @@ footer a:hover{
     transition: all .2s ease-in-out;
     cursor: pointer;
 }
-#login .socail-con .s-btn:hover {
+#form-wrap .socail-con .s-btn:hover {
     -webkit-transform: scale(1.05, 1.05);
     transform: scale(1.05, 1.05);
     -webkit-box-shadow: 0 1px 8px rgba(0,0,0,0.3);
     box-shadow: 0 1px 8px rgba(0,0,0,0.3);
 }
-#login .socail-con .s-btn img{
+#form-wrap .socail-con .s-btn img{
     width: 20%;
     padding: 3%;
     margin-left: -10px;
 }
-#login .socail-con .s-btn span{
+#form-wrap .socail-con .s-btn span{
     color: #fff;
     font-size: 1.2em;
     margin-left: 5px;
 }
-#login .socail-con .fb{
+#form-wrap .socail-con .fb{
     background: #395599;
 }
-#login .socail-con  .line{
+#form-wrap .socail-con  .line{
     background: #16c20c;
 }
 .login .shop{
@@ -935,28 +935,28 @@ footer a:hover{
 }
 /*註冊*/
 
-.register #login .login-con .top {
+.register #form-wrap .login-con .top {
     background-color: #f7f6f4;
     padding: 15px;
 }
-.register #login .login-con h2{
+.register #form-wrap .login-con h2{
     color:#493c23 ;
 }
 .register .content-wrap .shop{
     padding: 1%;
     height: 100%!important;
 }
-.register #login .login-con h2{
+.register #form-wrap .login-con h2{
     margin: 0;
 }
 .register .return{
     margin-top: 1.2em;
 }
-.register #login .login-con .agree{
+.register #form-wrap .login-con .agree{
     color: #493c23;
     font-size: 0.8em;
 }
-.register #login .login-con .agree button{
+.register #form-wrap .login-con .agree button{
     background: none;
     color:#493c23 ;
     width: auto;
@@ -1126,6 +1126,19 @@ footer a:hover{
 .membercenter .money-con .cash,.membercenter .money-con .points{
     padding-left: 5px;
 }
+/*重設密碼*/
+.forgetpassword p{
+    color: #fff;
+    text-align: left;
+    line-height: 2em;
+}
+.forgetpassword b{
+    color:#d9caab ;
+}
+/*商品詳細*/
+.shop-detail .content-wrap{
+    margin-top: 85px;
+}
 /*===========================RWD==============================*/
 @media (max-width: 991px) {
     #mainNav.navbar-shrink {
@@ -1193,7 +1206,7 @@ footer a:hover{
     }
 }
 @media (min-width: 992px) {
-    .register #login .shop {
+    .register #form-wrap .shop {
         padding: 1%;
         height: 100%;
     }
@@ -1215,24 +1228,31 @@ footer a:hover{
 
 /*通用 ========================= 平板以下 (手機、平板)*/
 @media only screen and (max-width : 767px){
+    /*重設密碼*/
+    .forgetpassword #form-wrap .login-con .top{
+        padding: 15px;
+    }
+    .forgetpassword  .container{
+        padding: 0;
+    }
     .register .container{
         padding: 0;
     }
-    #login .login-con{
+    #form-wrap .login-con{
         max-width: 100%;
         min-width: 100%;
     }
-    #login .login-con h2{
+    #form-wrap .login-con h2{
         margin: 0;
         font-size: 1.5em;
     }
-    #login{
+    #form-wrap{
         flex-wrap: wrap;
     }
     .login .shop{
-        height:100%;
+        height: 100vh;
     }
-    #login .socail-con {
+    #form-wrap .socail-con {
         width: 100%;
     }
     #mainNav .navbar-nav>li.nav-item>a.nav-link, #mainNav .navbar-nav>li.nav-item>a.nav-link:focus{
