@@ -31,7 +31,7 @@
     left: 0;
     width: 40px;
     height: 480px;
-    background-image: url('../images/fbplus/fbplus.png');
+    background-image: url('../../image/products/fbplus.png');
 }
 
 #fbplus-overlay {
@@ -95,7 +95,7 @@
     right: -15px;
     width: 30px;
     height: 30px;
-    background: transparent url('../images/fbplus/fbplus.png') -40px 0px;
+    background: transparent url('../../image/products/fbplus.png') -40px 0px;
     cursor: pointer;
     z-index: 1103;
     display: none;
@@ -133,7 +133,7 @@
     width: 35%;
     cursor: pointer;
     outline: none;
-    background: transparent url('../images/fbplus/blank.gif');
+    background: transparent url('../../image/products/blank.gif');
     z-index: 1102;
     display: none;
 }
@@ -159,12 +159,12 @@
 }
 
 #fbplus-left-ico {
-    background-image: url('../images/fbplus/fbplus.png');
+    background-image: url('../../image/products/fbplus.png');
     background-position: -40px -30px;
 }
 
 #fbplus-right-ico {
-    background-image: url('../images/fbplus/fbplus.png');
+    background-image: url('../../image/products/fbplus.png');
     background-position: -40px -60px;
 }
 
@@ -195,13 +195,13 @@
     top: -20px;
     left: 0;
     width: 100%;
-    background-image: url('../images/fbplus/fbplus-x.png');
+    background-image: url('../../image/products/fbplus-x.png');
 }
 
 #fbplus-bg-ne {
     top: -20px;
     right: -20px;
-    background-image: url('../images/fbplus/fbplus.png');
+    background-image: url('../../image/products/fbplus.png');
     background-position: -40px -162px;
 }
 
@@ -209,7 +209,7 @@
     top: 0;
     right: -20px;
     height: 100%;
-    background-image: url('../images/fbplus/fbplus-y.png');
+    background-image: url('../../image/products/fbplus-y.png');
     background-position: -20px 0px;
 }
 
