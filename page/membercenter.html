@@ -113,66 +113,176 @@
 <div class="page-wrapper" id="container">
     <div class="content-wrap">
         <div class="memberwrap">
-        <section class="membercard">
-            <div class="container">
-                <div class="memberinfo col-sm-10 col-lg-5">
-                    <div class="top">
-                        <div class="level mb-1">
-                            <div class="level_icon"></div>LV2
-                            <div class="user">
-                                <div class="username"><i class="fas fa-user-circle"></i><span id="username">王小明</span></div>
+            <section class="membercard" id="memberall">
+                <div class="container">
+                    <div class="memberinfo col-sm-10 col-lg-5">
+                        <div class="top">
+                            <div class="level mb-1">
+                                <div class="level_icon"></div>LV2
+                                <div class="user">
+                                    <div class="username"><i class="fas fa-user-circle"></i><span id="username">王小明</span></div>
+                                </div>
+                            </div>
+                            <div class="mb-1 money">
+                                <span class="now">目前：<span class="now-number">2500</span>／3000</span>
+                                <div class="mb-4">還差<span class="need-number">500</span>元成為聯盟會員</div>
+                            </div>
+                            <div class="progress mb-4">
+                                <div class="progress-bar" role="progressbar" style="width: 80%" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                            <div class="money_wrap">
+                                <div class="money-con"><i class="fas fa-money-bill-alt"></i>現金錢包<div class="cash">$100</div></div>
+                                <div class="money-con"><i class="fas fa-coins"></i>購物金<div class="points">$500</div></div>
                             </div>
                         </div>
+                    </div>
+                    <div class="middle col-sm-12 col-lg-11">
+                        <div class="list">
+                            <div class="" onclick="ChangePage('memberdata');"><i class="fas fa-user-edit"></i>修改會員資料</div>
+                            <div class="" onclick="ChangePage('order');"><i class="fas fa-search"></i>查詢消費紀錄</div>
+                            <div class="" onclick="ChangePage('apply');"><i class="fas fa-file-alt"></i>提領現金申請表</div>
+                            <div class="" onclick="ChangePage('share');"><i class="fas fa-qrcode"></i>會員推廣分享碼</div>
+                        </div>
+                        <!--修改會員資料-->
+                        <section class="membercard" id="memberdata" style="display: none">
+                            <div class="container">
+                                <div class="title"><span>修改會員資料</span></div>
+                                <div class="content">
+                                    <div class="form-group row">
+                                        <div class="col-sm-12 mb-4">
+                                            <label for="name" class="mb-2">姓名</label>
+                                            <input type="text" class="form-control" id="name"  value="王小明" readonly>
+                                        </div>
+                                        <div class="col-sm-12 mb-4">
+                                            <label for="email" class="mb-2">電子郵件</label>
+                                            <input type="text" class="form-control" id="email"  value="winnie@gmail.com">
+                                        </div>
+                                        <div class="col-sm-12 mb-4">
+                                            <label for="phone" class="mb-2">手機</label>
+                                            <input type="text" class="form-control" id="phone"  value="0912345678" maxlength="10" onkeyup="this.value=this.value.replace(/\D/g,'')" readonly>
+                                        </div>
+                                        <div class="col-sm-12 mb-4">
+                                            <label for="bithdate" class="mb-2">生日</label>
+                                            <input type="text" class="form-control" id="bithdate"  value="1992/11/03" readonly>
 
+                                        </div>
+                                        <div class="col-sm-12 mb-4">
+                                            <label for="fixapplypassword" class="mb-2">修改提領現金申請密碼</label>
+                                            <input type="text" class="form-control" id="fixapplypassword" placeholder="請輸入密碼" value="">
+                                        </div>
+                                        <div class="col-sm-12 mb-4">
+                                            <label for="confirmpw" class="mb-2">密碼確認*</label>
+                                            <input type="text" class="form-control" id="confirmpw" placeholder="請再次輸入密碼確認" value="">
 
-                        <div class="mb-1 money">
-                            <span class="now">目前：<span class="now-number">2500</span>／3000</span>
-                            <div class="mb-4">還差<span class="need-number">500</span>元成為聯盟會員</div>
-                        </div>
-                        <div class="progress mb-4">
-                            <div class="progress-bar" role="progressbar" style="width: 80%" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
-                        </div>
-                        <div class="money_wrap">
-                            <div class="money-con"><i class="fas fa-money-bill-alt"></i>現金錢包<div class="cash">$100</div></div>
-                            <div class="money-con"><i class="fas fa-coins"></i>購物金<div class="points">$500</div></div>
-                        </div>
+                                        </div>
+                                    </div>
+                                    <button type="submit">儲存</button>
+                                </div>
+                            </div>
+                        </section>
+                        <!--查詢消費紀錄-->
+                        <section class="membercard" id="order" style="display: none">
+                            <div class="title"><span>查詢消費紀錄</span></div>
+                            <div class="content btween">
+                                <div class="med_detail med_control">
+                                    <div class="med_title t_left">訂購時間</div>
+                                    <div class="med_content t_left">
+                                        <p>2020/04/21</p>
+                                    </div>
+                                </div>
+                                <div class="med_detail med_control">
+                                    <div class="med_title t_left">商品名稱</div>
+                                    <div class="med_content t_left">
+                                        <p>日本水溶性膳食纖維</p>
+                                    </div>
+                                    <div class="med_content t_left">
+                                        <p>日本水溶性膳食纖維</p>
+                                    </div>
+                                    <div class="med_content t_left">
+                                        <p>日本水溶性膳食纖維</p>
+                                    </div>
+                                </div>
+                                <div class="med_detail med_control">
+                                    <div class="med_title">數量</div>
+                                    <div class="med_content">
+                                        <p>2</p>
+                                    </div>
+                                    <div class="med_content">
+                                        <p>2</p>
+                                    </div>
+                                    <div class="med_content">
+                                        <p>2</p>
+                                    </div>
+                                </div>
+                                <div class="med_detail med_control">
+                                    <div class="med_title">訂單狀態</div>
+                                    <div class="med_content">
+                                        <p>配送中</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                        <!--提領現金申請表-->
+                        <section class="membercard" id="apply" style="display: none">
+                            <div class="title"><span>提領現金申請表</span></div>
+                            <div class="content">
+                                <div class="form-group row">
+                                    <div class="col-sm-12 mb-4">
+                                        <label for="name" class="mb-2">銀行戶名</label>
+                                        <input type="text" class="form-control" id="bankname"  value="王小明" readonly>
+                                    </div>
+                                    <div class="col-sm-12 mb-4">
+                                        <label for="phone" class="mb-2">銀行代碼</label>
+                                        <input type="text" class="form-control" id="bankcode"  value="818">
+                                    </div>
+                                    <div class="col-sm-12 mb-4">
+                                        <label for="phone" class="mb-2">銀行帳號</label>
+                                        <input type="text" class="form-control" id="banknumber"  value="12345678910">
+                                    </div>
+                                    <div class="col-sm-12 mb-4">
+                                        <label for="email" class="mb-2">提領金額</label>
+                                        <input type="text" class="form-control" id="applymoney" placeholder="請輸入提領金額" value="">
+                                    </div>
+                                    <div class="col-sm-12 mb-4">
+                                        <label for="applypassword" class="mb-2">輸入提領現金密碼</label>
+                                        <input type="password" class="form-control" id="applypassword" placeholder="請輸入密碼" value="">
+                                    </div>
+                                </div>
+                                <button type="submit" class="col-lg-12 col-sm-12">送出申請</button>
+                            </div>
+                        </section>
+                        <!--會員推廣分享碼-->
+                        <section class="membercard" id="share" style="display: block">
+                            <div class="title"><span>會員推廣分享碼</span></div>
+                            <div class="content">
+                                <div class="mb-4">還差<span class="need-number">500</span>元成為聯盟會員</div>
+                                <div class="mb-4"><span>恭喜你開始享有聯盟行銷資格</span></div>
+                                <div class="mb-4"><span>以下為您專屬的QRcode</span></div>
+                                <div><img src="../image/member/qrcode.png" alt="QRcode"></div>
+                            </div>
+                        </section>
+
                     </div>
                 </div>
-                <div class="middle col-sm-12 col-lg-11">
-                    <div class="list">
-                        <a href="" class=""><i class="fas fa-user-edit"></i>修改會員資料</a>
-                        <a href="" class=""><i class="fas fa-search"></i>查詢消費紀錄</a>
-                        <a href="" class=""><i class="fas fa-file-alt"></i>提領現金申請表</a>
-                        <a href="" class=""><i class="fas fa-qrcode"></i>會員推廣分享碼</a>
-                    </div>
-                    <!--<div><img src="../image/member/qrcode.png" alt=""></div>-->
+            </section>
+        </div>
+        <!--頁尾-->
+        <footer>
+            <div class="container-fluid">
+                <div class="top">
+                    <a href="https://goo.gl/maps/MiNsxCfYf3YURhsNA" target="_blank">
+                        <i class="fas fa-map-marker-alt"></i><span>407620 台中市西屯區市政路500號9樓之1</span>
+                    </a>
+                    <a href="tel:0422546810">
+                        <i class="fas fa-phone-alt"></i><span>04-2254-6810</span>
+                    </a>
+                    <a href="mailto:txiltdinc@gmail.com">
+                        <i class="far fa-envelope"></i><span>txiltdinc@gmail.com</span>
+                    </a>
                 </div>
+                <div class="bottom"><span>Copyright © 2020 騰璽國際股份有限公司 All Rights Reserved.</span></div>
             </div>
-        </section>
-        <section class="membercard" id="memberdata" style="display: none">
-
-        </section>
-        <section class="membercard" id="order" style="display: none">
-
-        </section>
-        </div>
-    <!--頁尾-->
-    <footer>
-        <div class="container-fluid">
-            <div class="top">
-                <a href="https://goo.gl/maps/MiNsxCfYf3YURhsNA" target="_blank">
-                    <i class="fas fa-map-marker-alt"></i><span>407620 台中市西屯區市政路500號9樓之1</span>
-                </a>
-                <a href="tel:0422546810">
-                    <i class="fas fa-phone-alt"></i><span>04-2254-6810</span>
-                </a>
-                <a href="mailto:txiltdinc@gmail.com">
-                    <i class="far fa-envelope"></i><span>txiltdinc@gmail.com</span>
-                </a>
-            </div>
-            <div class="bottom"><span>Copyright © 2020 騰璽國際股份有限公司 All Rights Reserved.</span></div>
-        </div>
-    </footer>
+        </footer>
     </div>
 </div>
 <!--JS -->
@@ -185,17 +295,31 @@
 <script type="text/javascript" src="../plugins/scrollreveal.min.js"></script>
 <script type="text/javascript" src="../js/custom.js"></script>
 <script>
-    // Scroll reveal calls
-    window.sr = ScrollReveal();
+    function ChangePage(type) {
 
-    sr.reveal('.shop .con:nth-child(even)', {
-        delay: 200,
-        scale: 0
-    });
-    sr.reveal('.shop .con:nth-child(odd)', {
-        delay: 400,
-        scale: 0
-    });
+        if ( type =='memberdata'){
+            $('#order').hide();
+            $('#share').hide();
+            $('#apply').hide();
+            $('#'+type).fadeIn();
+        }else if(type =='order'){
+            $('#memberdata').hide();
+            $('#share').hide();
+            $('#apply').hide();
+            $('#'+type).fadeIn();
+        }else if(type =='share') {
+            $('#memberdata').hide();
+            $('#order').hide();
+            $('#apply').hide();
+            $('#' + type).fadeIn();
+        }else if (type =='apply') {
+            $('#memberdata').hide();
+            $('#share').hide();
+            $('#order').hide();
+            $('#' + type).fadeIn();
+        }
+
+    }
     function testAnim(shake) {
         $('.cart, .phone-cart').removeClass('shake').addClass('shake'+' animated').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function(){
             $(this).removeClass('shake');

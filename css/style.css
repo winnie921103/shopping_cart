@@ -1,5 +1,4 @@
 @import "animate.css";
-/* 共用 */
 * {
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
@@ -14,6 +13,14 @@ body{
 }
 button{
     outline: none!important;
+}
+/*共用*/
+.t_left{
+    text-align: left;
+}
+.btween{
+    display: flex;
+    justify-content: space-between;
 }
 /*checkbox*/
 .choiceBox  input+label {
@@ -1040,7 +1047,7 @@ footer a:hover{
 .membercenter .middle .list i{
     margin-right: 5px;
 }
-.membercenter .middle .list a{
+.membercenter .middle .list div{
     display: flex;
     padding: 2em;
     background: #eeee;
@@ -1085,9 +1092,9 @@ footer a:hover{
 .membercenter .title span{
     font-size: 1.2em;
     color: #625434;
-    background-image: linear-gradient(120deg, #f6e8cd 0%, #ead29c 100%);
+    background: #fff;
     margin: 10px;
-    padding: 10px 5px;
+    padding: 10px;
     position: relative;
     z-index: 2;
 }
@@ -1096,7 +1103,7 @@ footer a:hover{
     content: '';
     width: 100%;
     height: 1px;
-    background-color: #625434;
+    background-color: #606060;
     top: 50%;
     left: 0;
     z-index: 1;
@@ -1126,7 +1133,56 @@ footer a:hover{
 .membercenter .money-con .cash,.membercenter .money-con .points{
     padding-left: 5px;
 }
-/*重設密碼*/
+.membercenter .membercard  .content{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.membercenter .container{
+    padding: 0;
+}
+.membercenter .membercard #share div{
+    width: 100%;
+    text-align: center;
+}
+.membercenter .membercard .content button:hover {
+    background-color: #ae8429;
+    color: #fff;
+    transform: translateY(-5px);
+}
+.membercenter .membercard .content button:active {
+    background-color: #ae8429;
+    color: #fff;
+    transform: translateY(5px);
+}
+.membercenter .membercard .content button {
+    width: 100%;
+    background-color: #e6d7b3;
+    color: #ae8429;
+    font-size: 1.2em;
+    padding: 15px 0;
+    font-weight: bold;
+    border: none;
+    -webkit-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out;
+    cursor: pointer;
+    outline: none;
+}
+.membercenter .membercard  .med_detail {
+    width: 100%;
+    text-align: left;
+    letter-spacing: 1px;
+    padding: 0px 5px;
+}
+.membercenter .membercard .med_title{
+    font-weight: bold;
+    margin: 10px 0;
+}
+.membercenter .membercard .med_control {
+    width: 25%;
+    text-align: center;
+}
+    /*重設密碼*/
 .forgetpassword p{
     color: #fff;
     text-align: left;
@@ -1228,6 +1284,32 @@ footer a:hover{
 
 /*通用 ========================= 平板以下 (手機、平板)*/
 @media only screen and (max-width : 767px){
+    .membercenter .membercard .med_detail {
+        width: 100%;
+        text-align: center;
+        letter-spacing: 1px;
+        display: flex;
+        padding: 5px 0;
+        align-items: center;
+        border-bottom: 1px dotted #b0b0b0;
+    }
+    .membercenter .membercard .med_title {
+        font-weight: bold;
+        text-align: left;
+        width: 38%;
+        margin: 0 10px 0 0;
+    }
+    /*會員中心*/
+    .membercenter .middle .list div {
+        display: flex;
+        padding: 1em;
+        background: #eeee;
+        border-radius: 10px;
+        color: #696969;
+        margin: 1%;
+        white-space: nowrap;
+        width: 155px;
+    }
     /*重設密碼*/
     .forgetpassword #form-wrap .login-con .top{
         padding: 15px;
