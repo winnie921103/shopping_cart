@@ -1229,6 +1229,27 @@ footer a:hover{
 .membercenter .titel_btn.collapsed::after {
     animation: rotate 0.5s forwards;
 }
+/*商品詳細*/
+.shop-detail .slick-slide img{
+    height: 100%;
+}
+.shop-detail .slider-for{
+    /*width: 500px;*/
+    margin: 0 auto;
+    overflow: hidden;
+}
+.shop-detail .product-pic img{
+    width: 100%;
+    min-height: 100%;
+}
+.shop-detail .slider-nav{
+    /*width: 500px;*/
+    height: 100%;
+    margin: auto;
+}
+.shop-detail .con{
+    display: flex;
+}
     /*重設密碼*/
 .forgetpassword p{
     color: #fff;

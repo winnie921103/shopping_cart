@@ -7,17 +7,13 @@
     <link rel="icon" type="image/x-icon" href="../image/favicon.png">
     <title>TENG XI騰璽國際股份有限公司</title>
     <link rel="stylesheet" type="text/css" href="../plugins/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="../plugins/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="../plugins/slick/slick-theme.css"/>
     <link href="https://fonts.googleapis.com/css?family=Noto+Serif+TC&amp;display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300;400;500;700;900&amp;display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Roboto&amp;display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="../css/reset.css">
-    <!--商品詳細圖-->
-    <script type="text/javascript" src="../plugins/jquery/jquery.easing.min.js"></script>
-    <script type="text/javascript" src="../plugins/cart/jquery.min.js"></script>
-    <script type="text/javascript" src="../plugins/cart/jquery.fancybox-plus.js"></script>
-    <script type="text/javascript" src="../plugins/cart/jquery.ez-plus.js"></script>
-    <link rel="stylesheet" type="text/css" href="../plugins/cart/jquery.fancybox-plus.css">
-
+    <link rel="stylesheet" type="text/css" href="../css/all.css">
     <link rel="stylesheet" type="text/css" href="../css/pushy.css">
     <link rel="stylesheet" type="text/css" href="../css/style.css">
 
@@ -122,70 +118,45 @@
                 <div class="content-wrap">
                     <div class="top con">
                         <!--商品照片輪播圖-->
-
-                    <div class="product-pic col-sm-6">
-                        <div class="zoom-wrapper">
-                            <div class="zoom-left">
-                                <img class="zoom-img" id="zoom_03"
-                                     src="../image/products/small/image3.jpg"
-                                     data-zoom-image="../image/products/large/image3.jpg"
-                                     width="411"/>
-
-                                <div id="gallery_01" style="width:500px;float:left;">
-
-                                    <a href="#" class="elevatezoom-gallery active" data-update=""
-                                       data-image="../image/products/small/image1.jpg"
-                                       data-zoom-image="../image/products/large/image1.jpg">
-                                        <img src="../image/products/small/image1.jpg" width="100"/>
-                                    </a>
-
-                                    <a href="#" class="elevatezoom-gallery"
-                                       data-image="../image/products/small/image2.jpg"
-                                       data-zoom-image="../image/products/large/image2.jpg">
-                                        <img src="../image/products/small/image2.jpg" width="100"/>
-                                    </a>
-
-                                    <a href="tester" class="elevatezoom-gallery"
-                                       data-image="../image/products/small/image3.jpg"
-                                       data-zoom-image="../image/products/large/image3.jpg">
-                                        <img src="../image/products/small/image3.jpg" width="100"/>
-                                    </a>
-
-                                    <a href="tester" class="elevatezoom-gallery"
-                                       data-image="../image/products/small/image4.jpg"
-                                       data-zoom-image="../image/products/large/image4.jpg"
-
-                                       class="slide-content">
-                                        <img src="../image/products/small/image4.jpg" width="100"/>
-                                    </a>
-
-                                </div>
+                    <div class="product-pic  col-lg-6 col-sm-12">
+                        <div class="slider-for">
+                            <div class="item">
+                                <img src="../image/products/pdimg-01.jpg" alt="image"  draggable="false"/>
                             </div>
-                            <div style="clear:both;"></div>
-                            <script type="text/javascript">
-                                $(document).ready(function () {
-                                    $("#zoom_03").ezPlus({
-                                        gallery: 'gallery_01',
-                                        cursor: 'pointer',
-                                        galleryActiveClass: "active",
-                                        imageCrossfade: true,
-                                        loadingIcon: "https://www.elevateweb.co.uk/spinner.gif"
-                                    });
+                            <div class="item">
+                                <img src="../image/products/pdimg-02.jpg" alt="image" draggable="false"/>
+                            </div>
+                            <div class="item">
+                                <img src="../image/products/pdimg-01.jpg" alt="image" draggable="false"/>
+                            </div>
+                            <div class="item">
+                                <img src="../image/products/pdimg-01.jpg" alt="image" draggable="false"/>
+                            </div>
+                            <div class="item">
+                                <img src="../image/products/pdimg-01.jpg" alt="image" draggable="false"/>
+                            </div>
+                        </div>
 
-                                    $("#zoom_03").bind("click", function (e) {
-                                        var ez = $('#zoom_03').data('ezPlus');
-                                        ez.closeAll(); //NEW: This function force hides the lens, tint and window
-                                        $.fancyboxPlus(ez.getGalleryList());
-                                        return false;
-                                    });
-
-                                });
-
-                            </script>
+                        <div class="slider-nav">
+                            <div class="item">
+                                <img src="../image/products/pdimg-01.jpg" alt="image"  draggable="false"/>
+                            </div>
+                            <div class="item">
+                                <img src="../image/products/pdimg-02.jpg" alt="image" draggable="false"/>
+                            </div>
+                            <div class="item">
+                                <img src="../image/products/pdimg-01.jpg" alt="image" draggable="false"/>
+                            </div>
+                            <div class="item">
+                                <img src="../image/products/pdimg-01.jpg" alt="image" draggable="false"/>
+                            </div>
+                            <div class="item">
+                                <img src="../image/products/pdimg-01.jpg" alt="image" draggable="false"/>
+                            </div>
                         </div>
                     </div>
                         <!--右邊資料-->
-                        <div class="right-content col-sm-6">
+                        <div class="right-content col-lg-6 col-sm-12">
                             <div class="product-name">
                                 <span>綠原酸（ACID）</span>
                             </div>
@@ -226,14 +197,53 @@
     </div>
 </div>
 <!--JS -->
+<script type="text/javascript" src="../plugins/jquery/jquery-3.4.1.min.js"></script>
+<script type="text/javascript" src="../plugins/jquery/jquery.easing.min.js"></script>
 <script type="text/javascript" src="../plugins/bootstrap/js/bootstrap.min.js"></script>
 <script type="text/javascript" src="../plugins/bootstrap/bootstrap.bundle.min.js"></script>
+<script type="text/javascript" src="../plugins/slick/slick.min.js"></script>
 <script type="text/javascript" src="../plugins/pushy.js"></script>
-<!--商品詳細圖-->
+<script type="text/javascript" src="../plugins/scrollreveal.min.js"></script>
 <script type="text/javascript" src="../js/custom.js"></script>
 <script>
 
-    // Scroll reveal calls
+    $('.slider-for').slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        arrows: false,
+        fade: true,
+        asNavFor: '.slider-nav',
+        autoplay: false
+    });
+    $('.slider-nav').slick({
+        slidesToShow: 5,
+        slidesToScroll: 1,
+        arrows: false,
+        asNavFor: '.slider-for',
+        dots: false,
+        focusOnSelect: true,
+        responsive: [{
+            breakpoint: 1024,
+            settings: {
+                slidesToShow: 5,
+                slidesToScroll: 5,
+            }
+        }, {
+            breakpoint: 640,
+            settings: {
+                slidesToShow: 4,
+                slidesToScroll: 4,
+            }
+        }, {
+            breakpoint: 420,
+            settings: {
+                slidesToShow: 3,
+                slidesToScroll: 3,
+            }
+        }]
+
+    });
+
     function testAnim(shake) {
         $('.cart, .phone-cart').removeClass('shake').addClass('shake'+' animated').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function(){
             $(this).removeClass('shake');
@@ -245,17 +255,6 @@
             e.preventDefault();
             var anim = $('.shake');
             testAnim(anim);
-        });
-        $('#zoom_03').ezPlus({
-            constrainType: 'height', constrainSize: 274, zoomType: 'lens',
-            containLensZoom: true, gallery: 'gallery_01', cursor: 'pointer', galleryActiveClass: 'active'
-        });
-
-        //pass the images to Fancybox
-        $('#zoom_03').bind('click', function (e) {
-            var ez = $('#zoom_03').data('ezPlus');
-            $.fancyboxPlus(ez.getGalleryList());
-            return false;
         });
 
     });
