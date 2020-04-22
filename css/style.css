@@ -1083,13 +1083,13 @@ footer a:hover{
     width: 32px;
     height: 32px;
 }
-.membercenter .title{
+.membercenter .membercard .title{
     text-align: center;
     position: relative;
     margin: 30px 0;
 
 }
-.membercenter .title span{
+.membercenter .membercard .title span{
     font-size: 1.2em;
     color: #625434;
     background: #fff;
@@ -1098,7 +1098,7 @@ footer a:hover{
     position: relative;
     z-index: 2;
 }
-.membercenter .title::before {
+.membercenter .membercard .title::before {
     position: absolute;
     content: '';
     width: 100%;
@@ -1137,6 +1137,7 @@ footer a:hover{
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
+    width: 100%;
 }
 .membercenter .container{
     padding: 0;
@@ -1168,19 +1169,65 @@ footer a:hover{
     cursor: pointer;
     outline: none;
 }
-.membercenter .membercard  .med_detail {
+.membercenter .membercard .img-pic{
+    background-size: cover;
+    background-position: center;
+    height: 110px;
+}
+.membercenter #order .top{
+    display: flex;
+    justify-content: space-between;
     width: 100%;
-    text-align: left;
-    letter-spacing: 1px;
-    padding: 0px 5px;
 }
-.membercenter .membercard .med_title{
-    font-weight: bold;
-    margin: 10px 0;
+.membercenter .card-header{
+    color: #fff;
+    background-color: #606060;
+    position: relative;
+    width: 100%;
+    cursor: pointer;
+    margin-bottom: 15px;
 }
-.membercenter .membercard .med_control {
-    width: 25%;
-    text-align: center;
+.membercenter  .titel_btn {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+.membercenter #order .cart-con .inner:not(:nth-child(1)) {
+    padding: 15px 0;!important;
+    border-top: 1px solid #EAF0ED;!important;
+}
+.membercenter #order .titel_btn div{
+    margin-right: 5px;
+    margin-bottom: 5px;
+}
+.membercenter .cart-con .price{
+    border:none;
+}
+.membercenter .titel_btn::before{
+    content: "";
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translate(0px,-50%);
+    width: 20px;
+    height: 3px;
+    border-radius: 2px;
+    background-color: #ffffff;
+}
+.membercenter .titel_btn::after {
+    content: "";
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translate(0px,-50%) rotate(0deg);
+    width: 20px;
+    height: 3px;
+    border-radius: 2px;
+    background-color: #ffffff;
+    animation: rotate_back 0.5s forwards;
+}
+.membercenter .titel_btn.collapsed::after {
+    animation: rotate 0.5s forwards;
 }
     /*重設密碼*/
 .forgetpassword p{
