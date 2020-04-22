@@ -513,7 +513,7 @@ footer a:hover{
     padding: 10px;
     border-top: 1px solid #f1ebe0;
 }
-.shop .con button {
+.shop .con .add-btn {
     width: 100%;
     background-color: #e6d7b3;
     color: #ae8429;
@@ -529,7 +529,7 @@ footer a:hover{
 .shop .con i{
     margin-right: 1em;
 }
-.shop .con button:hover {
+.shop .con .add-btn:hover {
     background-color: #ae8429;
     color: #fff;
 }
@@ -1230,6 +1230,14 @@ footer a:hover{
     animation: rotate 0.5s forwards;
 }
 /*商品詳細*/
+.shop-detail .right-content{
+    position: relative;
+}
+.shop-detail .shop .con .add-btn {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
 .shop-detail .slick-slide img{
     height: 100%;
 }
@@ -1242,13 +1250,69 @@ footer a:hover{
     width: 100%;
     min-height: 100%;
 }
-.shop-detail .slider-nav{
-    /*width: 500px;*/
-    height: 100%;
-    margin: auto;
-}
 .shop-detail .con{
     display: flex;
+    flex-wrap: wrap;
+}
+.shop-detail .slick-next,.shop-detail .slick-prev{
+    z-index: 100;
+}
+.shop-detail .product-name{
+    font-size: 1.5em;
+    font-weight: bold;
+    line-height: 2em;
+}
+.shop-detail .product-description{
+    line-height: 2em;
+    margin-bottom: 5em;
+}
+.shop-detail .product-detail .title{
+    display: block;
+    width: 7em;
+    text-align: center;
+    padding: 10px;
+    background: #e6d7b3;
+    cursor: pointer;
+    position: relative;
+}
+.shop-detail .product-detail .title::after{
+    content: "";
+    display: block;
+    height: 2px;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: 1;
+    background: #c7bca4;
+}
+.shop-detail .product-detail .inner{
+    padding: 1em;
+    background: #fff;
+    border-top:1px solid #eee;
+}
+.shop-detail .price{
+    text-align: left;
+    line-height: 2em;
+    font-size: 1.5em;
+}
+.shop-detail .none{
+    text-decoration: line-through;
+}
+.shop-detail .sale{
+    color: #dc3545;
+}
+.shop-detail .content-wrap{
+    margin-top: 45px;
+}
+.shop-detail .sort{
+    margin-bottom: 1em;
+    font-size: 1em;
+}
+.shop-detail .sort a{
+    margin: 0 0.8em;
+    color: #ae8429;
+    font-weight: bold;
 }
     /*重設密碼*/
 .forgetpassword p{
@@ -1259,10 +1323,7 @@ footer a:hover{
 .forgetpassword b{
     color:#d9caab ;
 }
-/*商品詳細*/
-.shop-detail .content-wrap{
-    margin-top: 85px;
-}
+
 /*===========================RWD==============================*/
 @media (max-width: 991px) {
     #mainNav.navbar-shrink {

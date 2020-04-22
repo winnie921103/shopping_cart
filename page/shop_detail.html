@@ -117,6 +117,7 @@
             <div class="container">
                 <div class="content-wrap">
                     <div class="top con">
+                        <div class="col-lg-12 col-sm-12 sort">分類:<a href="javascript:void(0);">健康食品</a>,<a href="javascript:void(0);">飲品</a> </div>
                         <!--商品照片輪播圖-->
                     <div class="product-pic  col-lg-6 col-sm-12">
                         <div class="slider-for">
@@ -158,7 +159,7 @@
                         <!--右邊資料-->
                         <div class="right-content col-lg-6 col-sm-12">
                             <div class="product-name">
-                                <span>綠原酸（ACID）</span>
+                                <span>日本水溶性膳食纖維</span>
                             </div>
                             <div class="product-amount">
                                 <div class="price">
@@ -171,7 +172,13 @@
                                 ＊可代客磨豆(手沖、義式）請於訂購備註中留下您所希望的研磨程度唷
                                 ＊可開立統一編號
                             </div>
-                            <button><i class="fas fa-cart-plus"></i>加入購物車</button>
+                            <button class="add-btn"><i class="fas fa-cart-plus"></i>加入購物車</button>
+                        </div>
+                    </div>
+                    <div class="product-detail">
+                        <div class="title">描述</div>
+                        <div class="inner">
+                            <img src="../image/products/pdimg-01.jpg" alt="">
                         </div>
                     </div>
                 </div>
@@ -206,21 +213,18 @@
 <script type="text/javascript" src="../plugins/scrollreveal.min.js"></script>
 <script type="text/javascript" src="../js/custom.js"></script>
 <script>
-
     $('.slider-for').slick({
         slidesToShow: 1,
         slidesToScroll: 1,
         arrows: false,
         fade: true,
-        asNavFor: '.slider-nav',
-        autoplay: false
+        asNavFor: '.slider-nav'
     });
     $('.slider-nav').slick({
-        slidesToShow: 5,
+        slidesToShow: 3,
         slidesToScroll: 1,
-        arrows: false,
         asNavFor: '.slider-for',
-        dots: false,
+        centerMode:false,
         focusOnSelect: true,
         responsive: [{
             breakpoint: 1024,
@@ -241,8 +245,8 @@
                 slidesToScroll: 3,
             }
         }]
-
     });
+
 
     function testAnim(shake) {
         $('.cart, .phone-cart').removeClass('shake').addClass('shake'+' animated').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function(){
@@ -251,7 +255,7 @@
     };
 
     $(document).ready(function(){
-        $('.shop .con button').click(function(e){
+        $('.shop .con .add-btn').click(function(e){
             e.preventDefault();
             var anim = $('.shake');
             testAnim(anim);
