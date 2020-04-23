@@ -17,9 +17,8 @@
     <link rel="stylesheet" type="text/css" href="../css/pushy.css">
     <link rel="stylesheet" type="text/css" href="../css/style.css">
 
-
 </head>
-<body class="shop-detail">
+<body class="checkout-detail">
 <!-- Pushy Menu -->
 <nav class="pushy pushy-right">
     <div class="pushy-content cart-con">
@@ -115,73 +114,43 @@
     <div class="content-wrap">
         <section class="shop">
             <div class="container">
-                <div class="content-wrap">
-                    <div class="top con">
-                        <div class="col-lg-12 col-sm-12 sort">分類:<a href="javascript:void(0);">健康食品</a>,<a href="javascript:void(0);">飲品</a> </div>
-                        <!--商品照片輪播圖-->
-                    <div class="product-pic  col-lg-6 col-sm-12">
-                        <div class="slider-for">
-                            <div class="item">
-                                <img src="../image/products/pdimg-01.jpg" alt="image"  draggable="false"/>
-                            </div>
-                            <div class="item">
-                                <img src="../image/products/pdimg-02.jpg" alt="image" draggable="false"/>
-                            </div>
-                            <div class="item">
-                                <img src="../image/products/pdimg-01.jpg" alt="image" draggable="false"/>
-                            </div>
-                            <div class="item">
-                                <img src="../image/products/pdimg-01.jpg" alt="image" draggable="false"/>
-                            </div>
-                            <div class="item">
-                                <img src="../image/products/pdimg-01.jpg" alt="image" draggable="false"/>
+                    <div class="checkout">
+                        <div class="container">
+                            <div class="row justify-content-center">
+                                <div class="col-lg-5 col-md-12">
+                                    <div class="left-con">
+                                        <div class="title">
+                                            <h2>確認訂單金額</h2>
+                                            <div class="progressive">
+                                                <div class="circle active"></div>
+                                                <div class="circle"></div>
+                                                <div class="circle"></div>
+                                            </div>
+                                        </div>
+                                        <div class="row form-con">
+                                            <div class="top-con">
+                                                <h3>訂單編號(AVC123456)</h3>
+                                                <div class="subtotal">
+                                                    <p>小計</p>
+                                                    <p>NT$ 2,700</p>
+                                                </div>
+                                                <div class="freight">
+                                                    <p>運費</p>
+                                                    <p>NT$ 300</p>
+                                                </div>
+                                                <div class="total">
+                                                    <p>總計</p>
+                                                    <p>NT$ 3,000</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <a href="../page/checkout-deliver.html" class="next-btn"><button>下一步</button></a>
+                                </div>
                             </div>
                         </div>
 
-                        <div class="slider-nav">
-                            <div class="item">
-                                <img src="../image/products/pdimg-01.jpg" alt="image"  draggable="false"/>
-                            </div>
-                            <div class="item">
-                                <img src="../image/products/pdimg-02.jpg" alt="image" draggable="false"/>
-                            </div>
-                            <div class="item">
-                                <img src="../image/products/pdimg-01.jpg" alt="image" draggable="false"/>
-                            </div>
-                            <div class="item">
-                                <img src="../image/products/pdimg-01.jpg" alt="image" draggable="false"/>
-                            </div>
-                            <div class="item">
-                                <img src="../image/products/pdimg-01.jpg" alt="image" draggable="false"/>
-                            </div>
-                        </div>
-                    </div>
-                        <!--右邊資料-->
-                        <div class="right-content col-lg-6 col-sm-12">
-                            <div class="product-name">
-                                <span>日本水溶性膳食纖維</span>
-                            </div>
-                            <div class="product-amount">
-                                <div class="price">
-                                    <span class="none">$3000</span>
-                                    <span class="sale">$2500</span>
-                                </div>
-                            </div>
-                            <div class="product-description">
-                                ＊全館滿600免運，優惠開跑中 !!<br>
-                                ＊可代客磨豆(手沖、義式）請於訂購備註中留下您所希望的研磨程度唷
-                                ＊可開立統一編號
-                            </div>
-                            <button class="add-btn"><i class="fas fa-cart-plus"></i>加入購物車</button>
-                        </div>
-                    </div>
-                    <div class="product-detail">
-                        <div class="title">描述</div>
-                        <div class="inner">
-                            <img src="../image/products/pdimg-01.jpg" alt="">
-                        </div>
-                    </div>
-                </div>
+            </div>
             </div>
         </section>
     <!--頁尾-->
@@ -213,41 +182,17 @@
 <script type="text/javascript" src="../plugins/scrollreveal.min.js"></script>
 <script type="text/javascript" src="../js/custom.js"></script>
 <script>
-    $('.slider-for').slick({
-        slidesToShow: 1,
-        slidesToScroll: 1,
-        arrows: false,
-        fade: true,
-        asNavFor: '.slider-nav'
-    });
-    $('.slider-nav').slick({
-        slidesToShow: 3,
-        slidesToScroll: 1,
-        asNavFor: '.slider-for',
-        centerMode:false,
-        focusOnSelect: true,
-        responsive: [{
-            breakpoint: 1024,
-            settings: {
-                slidesToShow: 5,
-                slidesToScroll: 5,
-            }
-        }, {
-            breakpoint: 640,
-            settings: {
-                slidesToShow: 4,
-                slidesToScroll: 4,
-            }
-        }, {
-            breakpoint: 420,
-            settings: {
-                slidesToShow: 3,
-                slidesToScroll: 3,
-            }
-        }]
-    });
+    // Scroll reveal calls
+    window.sr = ScrollReveal();
 
-
+    sr.reveal('.shop .con:nth-child(even)', {
+        delay: 200,
+        scale: 0
+    });
+    sr.reveal('.shop .con:nth-child(odd)', {
+        delay: 400,
+        scale: 0
+    });
     function testAnim(shake) {
         $('.cart, .phone-cart').removeClass('shake').addClass('shake'+' animated').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function(){
             $(this).removeClass('shake');
@@ -260,6 +205,7 @@
             var anim = $('.shake');
             testAnim(anim);
         });
+
 
     });
 
