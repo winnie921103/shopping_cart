@@ -1386,13 +1386,35 @@ footer a:hover{
 .checkout .left-con .title .progressive .circle.active {
     border: 1px #fff solid;
 }
+.checkout .left-con .title .progressive .circle.done {
+    background-color: #fff;
+}
+.checkout .left-con .title .progressive .circle a {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+}
+.checkout .left-con .title .progressive .circle.done::before {
+    content: '✔';
+    font-size: 14px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    color: #495057;
+    font-weight: bold;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
 .checkout .left-con .title .progressive .circle {
     width: 20px;
     height: 20px;
     position: relative;
     border-radius: 50%;
-    border: 1px #495057  solid;
-    background-color: #eeee;
+    border: 1px #ffffff solid;
+    background-color: #495057;
     z-index: 1;
 }
 .checkout .left-con .title .progressive .circle.active::before {
@@ -1425,6 +1447,7 @@ footer a:hover{
     font-size: 1em;
     margin-top: 15px;
     letter-spacing: 1px;
+    color: #fff;
 }
 .checkout-detail .subtotal p:first-child,
 .checkout-detail .freight p:first-child ,
@@ -1452,12 +1475,12 @@ footer a:hover{
 .checkout .left-con .form-con .custom-select {
     width: calc(50% - 5px);
     border-radius: 0;
-    color: #d9caab;
+    color: #495057;
 }
 .checkout .left-con .form-con input, .checkout .left-con .form-con .custom-select {
     width: 100%;
     height: 56px;
-    background-color: #d9caab;
+    background-color: #f6f5f3;
     border: none;
     padding: 0 15px;
     margin-top: 10px;
