@@ -1548,7 +1548,7 @@ footer .mid button {
     background: url(../image/index/ecpay_logo.svg)no-repeat;
     background-size: 100% auto;
     width: 7em;
-    height: 2em;
+    height: 3em;
     margin-left: 10px;
 }
 .checkout.done .left-con {
@@ -1715,6 +1715,10 @@ footer .mid button {
 
 /*通用 ========================= 平板以下 (手機、平板)*/
 @media only screen and (max-width : 767px){
+    .modal-body{
+        padding: 20px;
+        max-height: calc(80vh - 55px);
+    }
     .modal .container{
         padding: 0;
     }
