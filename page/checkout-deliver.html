@@ -19,6 +19,8 @@
 
 </head>
 <body class="checkout-detail">
+<!--回到頂端按鈕-->
+<div id="btn_goTop" class="btn_go_top"></div>
 <!-- Pushy Menu -->
 <nav class="pushy pushy-right">
     <div class="pushy-content cart-con">
@@ -114,74 +116,314 @@
     <div class="content-wrap">
         <section class="shop">
             <div class="container">
-                    <div class="checkout">
-                        <div class="container">
-                            <div class="row justify-content-center">
-                                <div class="col-lg-5 col-md-12">
-                                    <div class="left-con">
-                                        <div class="title">
-                                            <h2>運送</h2>
-                                            <div class="progressive">
-                                                <div class="circle done"><a href="../page/checkout-order.html"></a></div>
-                                                <div class="circle active"></div>
-                                                <div class="circle"></div>
-                                            </div>
-                                        </div>
-                                        <div class="row form-con">
-                                            <div class="col-6 pr-1">
-                                                <p>姓氏</p>
-                                                <input type="text" id="lastname" placeholder="王">
-                                            </div>
-                                            <div class="col-6 pl-1">
-                                                <p>名字</p>
-                                                <input type="text" id="firstname" placeholder="小明">
-                                            </div>
-                                            <div class="col-12">
-                                                <p>手機</p>
-                                                <input type="text" id="myphone" placeholder="0912-123-123">
-                                            </div>
-                                            <div class="col-12">
-                                                <p>地址</p>
-                                                <select class="custom-select mr-1" id="city">
-                                                    <option selected>請選擇</option>
-                                                    <option value="1">高雄市</option>
-                                                    <option value="2">高雄市</option>
-                                                    <option value="3">高雄市</option>
-                                                </select>
-                                                <select class="custom-select" id="inputGroupSelect01">
-                                                    <option selected>請選擇</option>
-                                                    <option value="1">前鎮區</option>
-                                                    <option value="2">苓雅區</option>
-                                                    <option value="3">左營區</option>
-                                                </select>
-                                                <input type="text" id="myadress" placeholder="厚德路 87號">
-                                            </div>
+                <div class="checkout">
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-5 col-md-12">
+                                <div class="left-con">
+                                    <div class="title">
+                                        <h2>運送</h2>
+                                        <div class="progressive">
+                                            <div class="circle done"><a href="../page/checkout-order.html"></a></div>
+                                            <div class="circle active"></div>
+                                            <div class="circle"></div>
                                         </div>
                                     </div>
-                                    <a href="../page/checkout-pay.html" class="next-btn"><button>下一步</button></a>
+                                    <div class="row form-con">
+                                        <div class="col-6 pr-1">
+                                            <p>姓氏</p>
+                                            <input type="text" id="lastname" placeholder="王">
+                                        </div>
+                                        <div class="col-6 pl-1">
+                                            <p>名字</p>
+                                            <input type="text" id="firstname" placeholder="小明">
+                                        </div>
+                                        <div class="col-12">
+                                            <p>手機</p>
+                                            <input type="text" id="myphone" placeholder="0912-123-123">
+                                        </div>
+                                        <div class="col-12">
+                                            <p>地址</p>
+                                            <select class="custom-select mr-1" id="city">
+                                                <option selected>請選擇</option>
+                                                <option value="1">高雄市</option>
+                                                <option value="2">高雄市</option>
+                                                <option value="3">高雄市</option>
+                                            </select>
+                                            <select class="custom-select" id="inputGroupSelect01">
+                                                <option selected>請選擇</option>
+                                                <option value="1">前鎮區</option>
+                                                <option value="2">苓雅區</option>
+                                                <option value="3">左營區</option>
+                                            </select>
+                                            <input type="text" id="myadress" placeholder="厚德路 87號">
+                                        </div>
+                                    </div>
+                                </div>
+                                <a href="../page/checkout-pay.html" class="next-btn"><button>下一步</button></a>
                             </div>
                         </div>
-
-            </div>
+                    </div>
+                </div>
             </div>
         </section>
-    <!--頁尾-->
-    <footer>
-        <div class="container-fluid">
-            <div class="top">
-                <a href="https://goo.gl/maps/MiNsxCfYf3YURhsNA" target="_blank">
-                    <i class="fas fa-map-marker-alt"></i><span>407620 台中市西屯區市政路500號9樓之1</span>
-                </a>
-                <a href="tel:0422546810">
-                    <i class="fas fa-phone-alt"></i><span>04-2254-6810</span>
-                </a>
-                <a href="mailto:txiltdinc@gmail.com">
-                    <i class="far fa-envelope"></i><span>txiltdinc@gmail.com</span>
-                </a>
+        <!--頁尾-->
+        <footer>
+            <div class="container-fluid">
+                <div class="top">
+                    <a href="https://goo.gl/maps/MiNsxCfYf3YURhsNA" target="_blank">
+                        <i class="fas fa-map-marker-alt"></i><span>407620 台中市西屯區市政路500號9樓之1</span>
+                    </a>
+                    <a href="tel:0422546810">
+                        <i class="fas fa-phone-alt"></i><span>04-2254-6810</span>
+                    </a>
+                    <a href="mailto:txiltdinc@gmail.com">
+                        <i class="far fa-envelope"></i><span>txiltdinc@gmail.com</span>
+                    </a>
+                </div>
+                <div class="mid">
+                    <div class="btn-wrap">
+                        <button type="button"  data-toggle="modal" data-target="#web">網站服務條款</button>
+                        <button type="button"  data-toggle="modal" data-target="#member">會員責任規範及個資聲明</button>
+                        <button type="button"  data-toggle="modal" data-target="#Return">退換貨政策</button>
+                    </div>
+                </div>
+                <div class="bottom"><span>Copyright © 2020 騰璽國際股份有限公司 All Rights Reserved.</span></div>
             </div>
-            <div class="bottom"><span>Copyright © 2020 騰璽國際股份有限公司 All Rights Reserved.</span></div>
+        </footer>
+    </div>
+    <!-- 退換貨跳框 -->
+    <div class="modal fade" id="Return" tabindex="-1" role="dialog" aria-labelledby="ReturnRule" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="ReturnRule">退換貨政策</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="container">
+                        <h1> 一、退貨申請說明</h1>
+                        <ul>
+                            <li>請注意：商品一經開封，恕無法辦理退貨，敬請見諒。
+                                （外包塑膠膜已撕開或商品塑膠袋已打開，即算開封狀態）
+                            </li>
+                            <li>收到商品超過7天，恕不接受退貨。</li>
+                            <li>請留下退貨申請之姓名、Email、手機號碼、訂單編號及退貨原因等，
+                                若使用信用卡以外的方式付款， 則需填寫匯款帳號。並寄送至公司帳戶，
+                                或是聯繫客服以及電話聯繫，收到您的退貨申請後，我們立即與您確認退貨相關事宜。</li>
+                            <li>退貨商品皆不可開封，<b>不接受部分退貨</b>，並請依原包裝寄回</li>
+                            <li>當您的退貨需求通過審核，<b>需請您自行寄回商品</b>，且自行負擔退貨物流費用。</li>
+                            <li>當您提交退貨申請表後，即代表同意我們的退貨原則，並接受我們代為處理發票作廢及相關的後續處理事宜。</li>
+                        </ul>
+                        <h1>二、退貨程序</h1>
+                        <ul>
+                            <li>透過網址或是mail電話方式聯絡客服，告知訂單編號</li>
+                            <li>請使用原寄送外包裝，或自行使用紙箱或包裝袋妥善包裝商品及相關附件，切勿直接於原廠包裝上黏貼紙張或書寫文字。
+                                您要求退貨之商品若有缺件或是損毀，本公司有權視損毀程度而折扣退款金額。單次訂購僅限一次退貨。</li>
+                            <li>請於退貨商品外包裝附上：姓名、電話、訂單編號、地址，以利退貨作業查詢。</li>
+                            <li>.客服會告知您將商品寄到指定地點。</li>
+                        </ul>
+                        <h1>三、退款</h1>
+                        <ul>
+                            <li>若您使用信用卡付款，客服收到並確認商品無誤後，於5個工作日內(不含週休及國定例假日)，完成刷卡退款之作業。
+                                依據不同發卡銀行的處理流程，完成退款的時間約5-7個工作日(不含週休及國定例假日)，
+                                退款實際入帳日期，依各發卡銀行入帳日不同有所差異，請洽信用卡公司詢問細節。</li>
+                            <li>若您使用超商取貨付款或銀行轉帳/ATM等方式，必須請您提供正確的匯款帳號，以利完成退款手續。</li>
+                            <li>若為賣方需負擔退貨運費之情形，請提供正確的匯款帳號， 以補償買方寄回之運費。</li>
+                            <li>若買方選擇超商取貨而逾期未取，導致商品退回賣方的情形，此筆交易的來回運費(原運費+退回運費+物流手續費)由買方負擔。</li>
+                            <li>若為購買時享有滿額免運的服務，退貨後的訂單金額不達免運門檻，將向買方酌收寄出時的運費。</li>
+                            <li>請注意：申請退貨翌日起算15天，若因無法聯繫、商品未寄回無法完成退貨作業，將自動取消退貨申請，且不得再次申請。</li>
+                        </ul>
+                        <h1>四、無法辦理退貨的情況</h1>
+                        <ul>
+                            <li>已<b>超過7天猶豫期</b>，恕無法辦理退貨。</li>
+                            <li>欲退貨訂單中任一商品若已開封（例如：外包塑膠膜已撕開或商品塑膠袋已打開或袋子已下水），即無法辦理退貨。/li>
+                            <li>若退貨商品與訂單有所出入，未將<b>此筆訂單的所有商品</b>等悉數寄回並妥善包裝，將影響您的退貨權益。</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
         </div>
-    </footer>
+    </div>
+    <!-- 網站服務條款跳框 -->
+    <div class="modal fade" id="web" tabindex="-1" role="dialog" aria-labelledby="WebServerRule" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="WebServerRule">網站服務條款</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="container">
+                        <h1> 一、服務政策</h1>
+                        <ul>
+                            <li>歡迎您使用名騰璽國際股份有限公司網站(以下簡稱「本網站」)。</li>
+                            <li>當您使用本網站，即表示您已閱讀、瞭解並同意接受本網站使用條款之全部內容與約定，如不同意本網站使用條款全部或部分者，請立即停止使用本網站。</li>
+                            <li>您同意本公司有權因應營運之需求，隨時調整本網站使用條款。</li>
+                        </ul>
+                        <h1>二、規範</h1>
+                        <ul>
+                            <li>在您成為本網站會員後，即可使用本網站所提供之各種服務，並需遵守網站規章及各項交易規定，本公司保留取消會員資格之權利，一旦被取消會員資格，將喪失所有會員權利及福利。</li>
+                            <li>本網站保留隨時修改本同意書之權利，您可隨時到網站瞭解相關修訂內容，若您繼續使用本服務，則視為您已閱讀並瞭解本同意書之修訂內容。</li>
+                            <li>承諾遵守中華民國相關法規及國際網際網路規定與慣例。</li>
+                        </ul>
+                        <h1>三、個人資料保護</h1>
+                        <ul>
+                            <li>本網站僅接受同一人之單筆本網加入會員，即您只能建立一次您的個人資料，請勿重覆登錄。</li>
+                            <li>您登錄成為會員時必須填寫確實資料，若發現有不實之登錄，或原所登錄之資料已不符合真實而未更新，本公司保留隨時終止網路會員資格及使用各項服務之權利。若您冒用他人名義，而造成其他會員或本站之損失，本網站將保留追訴權，並提供相關資料給警調單位調查。</li>
+                            <li>為維護您的權益，請妥善保存您的帳號及密碼，本網站將依據這組帳號及密碼來認定會員身分，完成會員在本網站上的所有交易等權益之行使。如果您懷疑密碼可能外洩，請立更新您的資料。如有遺失或被竊之慮時，應即時通知本網站，以免損害您的權益。因可歸責於會員之原因將其帳號及密碼外洩，造成會員損失或是發生其他法律責任者，該損失或責任將由會員自行負擔。</li>
+                            <li>本網站為提供完善的商品與會員服務，茲依據《個人資料保護法》第8條第1項規定，告知您以下事項：</li>
+                            <dl>
+                                <dt>(1) 蒐集目的：</dt>
+                                <p>為了提供完善的商品與會員服務，本網站將在基於下列目的蒐集您的個人資料：</p>
+                                <div class="text-indent">
+                                    <dd>A.行銷。 </dd>
+                                    <dd>B.契約、類似契約或其他法律關係事務。</dd>
+                                    <dd>C.消費者、客戶管理與服務。</dd>
+                                    <dd>D.網路購物及其他電子商務服務。</dd>
+                                    <dd>E.廣告或商業行為管</dd>
+                                    <dd>F.調查、統計與分析研究。</dd>
+                                </div>
+                            </dl>
+                            <dl>
+                                <dt>(2) 個人資料類別：</dt>
+                                <div class="text-indent">
+                                    <dd>A.識別類：姓名、身分證字號、護照號碼、住址、電話、電子郵件帳號。</dd>
+                                    <dd>B.特徵類：年齡、性別、出身年月日、國籍、生活習慣。</dd>
+                                </div>
+                            </dl>
+                            <dl>
+                                <dt>(3) 個人資料利用期間 :</dt>
+                                <p>本網站營運期間或於蒐集個人資料特定目的存續期間及依相關法令要求期間。</p>
+                            </dl>
+                            <dl>
+                                <dt> (4) 個人資料利用地區 :</dt>
+                                <p>本網站為達蒐集、處理及利用目的所必須使用之相關地區。</p>
+                            </dl>
+                            <dl>
+                                <dt>(5) 個人資料利用對象與方式：</dt>
+                                <div class="text-indent">
+                                    <dd>A. 本網站訂有契約或業務往來之委外公司與機構。</dd>
+                                    <dd>B. 物品寄送：於交寄相關商品時，將您的個人資料利用於交付給相關物流、郵寄廠商。</dd>
+                                    <dd>C. 金融交易及授權：您所提供之財務相關資訊，將於金融交易過程(如信用卡授權、轉帳)時，提交給金融機構以完成金融交易。</dd>
+                                    <dd>D. 行銷：本網站將利用您提供之地址及郵件進行本網站或合作廠商商品之宣傳行銷。</dd>
+                                    <dd>E. 資訊提供：提供騰璽國際介紹或其他對於客戶有益之各類廣告、資訊。</dd>
+                                    <dd>F. 會員卡、會員禮品、生日卡之寄送。</dd>
+                                    <dd>G. 其他於業務需要範圍內之必要傳遞。</dd>
+                                    <dd>H. 依法有權監督管理或調查之行政、司法機關，以及其他依據《個人資料保護法》得以利用之情形。</dd>
+                                </div>
+                            </dl>
+                            <dl>
+                                <dt>(6) 個人資料利用方式以書面或電子等。</dt>
+                            </dl>
+                            <dl>
+                                <dt>(7) 您得依據《個人資料保護法》行使之權利 :</dt>
+                                <div class="text-indent">
+                                    <dd> A. 向本公司查詢、請求閱覽或請求製給複製本。</dd>
+                                    <dd> B. 請求補充或更正您的個人資料，惟應提出適當之釋明文件。</dd>
+                                    <dd> C. 請求停止蒐集、處理、利用或刪除您的個人。</dd>
+                                    <dd> D. 您拒絕提供個人資料所致權益影響。</dd>
+                                </div>
+                            </dl>
+                            <dl>
+                                <dt>(8) 您可自由選擇是否註冊為本網站會員，如您不同意本網站處理及利用您的個人資料，本網站可能無法即時、順利的提供您完善的商品與相關服務，或提供您會員獨享之權利與優惠措施。您於註冊時所填載之個人資料，本網站於前開目的下為合理之蒐集、處理與利用。</dt>
+                            </dl>
+                        </ul>
+                        <h1>四、智慧財產權</h1>
+                        <ul>
+                            <li>刊載於本網站上有關各商品文字、圖檔、商標均屬本公司或相關權利人所擁有，受著作權法、商標法、專利法之保護，非經本公司或權利人事先許可或授權，不得任意使用，以免受侵權或違法之責任。</li>
+                            <li>使用本網站之風險由使用者個人自負其責，本公司或任何其他涉及設計、編輯或提供本網站網路之公司與個人，對於任何人因上網瀏覽或使用本網站所導致個人直接或間接、意外或非意外、或處罰性之損害，一概不負任何法律責任。</li>
+                            <li>一概禁止於本網站上傳送與張貼任何涉及非法、威脅、汙衊、不實、猥褻、煽動、色情、違反善良風俗，或任何足以構成或鼓勵犯罪、或引起民事訴訟或違反法律之內容與資訊。本公司保有修改與刪除之權力，並完全配合有關調查單位，提供上述行徑者之資料。</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--會員責任規範及個資聲明跳框-->
+    <div class="modal fade" id="member" tabindex="-1" role="dialog" aria-labelledby="MemberRule" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="MemberRule">會員責任規範及個資聲明</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="container">
+                        <h1> 一、會員服務條款</h1>
+                        <ul>
+                            <li>本會員服務條款所稱之「會員」，為依照本站所定之加入會員程序加入完成並通過認證者。</li>
+                            <li>當您使用本站服務時，即表示您同意及遵守本服務條款的規定事項及相關法律之規定。</li>
+                            <li>本站保留有審核加入會員資格之權利，另外已加入會員者，本站亦保留有解除其會員資格之權利。</li>
+                            <li>本會員服務條款之修訂，適用於所有會員，當本站修訂本服務條款時，將於本站上公告。</li>
+                        </ul>
+                        <h1>二、隱私權保護</h1>
+                        <ul>
+                            <p>尊重並依據本網站「個人資料保護」保護您的隱私(請參閱「個人資料保護」條款)。</p>
+                        </ul>
+                        <h1>三、會員</h1>
+                        <ul>
+                            <li>使用本站所提供之會員服務時，於加入會員時所登錄之帳號及密碼使用之。</li>
+                            <li>會員須善盡帳號及密碼的使用與管理之責任。對於使用該會員之帳號及密碼(無關於會員本身或其他人)利用本站服務所造成或衍生之所有行為及結果，會員須自行負擔全部責任。</li>
+                            <li>會員之帳號及密碼遺失，或發現無故遭第三者盜用時，應立即通知本站連絡掛失，因未即時通知，導致本站無法有效防止及修改時，所造成的所有損失，會員應自負全責。</li>
+                            <li>每次結束使用本服務，執行會員之登出並關閉視窗，以確保您的會員權益。</li>
+                            <li>盜用第三者會員之帳號及密碼，導致第三者或本公司遭其他第三人或行政機關之調查或追訴時，第三者會員或本公司有權向您請求損害賠償，包括但不限於訴訟費用、律師費及商譽損失等。</li>
+                        </ul>
+                        <h1>四、會員登錄資料</h1>
+                        <ul>
+                            <li>會員登錄資料須提供您本人正確、最新及完整的資料。</li>
+                            <li>會員登錄資料不得有偽造、不實等之情事(ex如個人資料及信用卡資料)，一經發現本公司可拒絕其加入會員資格之權利。並得以暫停或終止其會員資格，若違反中華民國相關法律，亦將依法追究。</li>
+                            <li>會員基本資料(ex:住址，電話及其他登錄資料)有變更時，請不定期更新相關個人資料，確保其正確及完整性。若您提供的資料有錯誤或不符等現象，本網站有權暫停或終止您的帳號，並拒絕您繼續使用本服務。</li>
+                            <li>未經會員本人同意，本公司原則上不會將涉及個人隱私之資料開示給第三者，唯資料共用原則...等不在此限(請參閱本站「隱私權保護聲明」相關規定)。</li>
+                            <li>會員應妥善保管密碼，不可將密碼洩露或提供給他人知道或使用；以同一個會員身分證字號和密碼使用本服務所進行的所有行為，都將被認為是該會員本人和密碼持有人的行為。</li>
+                            <li>會員如果發現或懷疑有第三人使用其會員身分證字號或密碼，應該立即通知本公司，採取必要的必要的防範措施。但上述通知不得解釋為本公司對會員負有任何形式之賠償或補償之責任或義務。</li>
+                        </ul>
+                        <h1>五、使用行為</h1>
+                        <ul>
+                            <li>您使用本服務之一切行為必須符合當地或國際相關法令規範；對於使用者的一切行為，您須自行負擔全部責任。</li>
+                            <li>您同意絕不為非法之目的或以非法方式使用本服務，與確實遵守中華民國相關法規及網際網路之國際慣例，並保證不得利用本服務從事侵害他人權益或違法之行為。</li>
+                            <li>您於使用本站會員服務時應遵守以下限制：</li>
+                            <dl>
+                                <div class="text-indent">
+                                    <dd>a)有損他人人格或商標權、著作權等智慧財產權或其他權利內容。</dd>
+                                    <dd>b)使用違反公共秩序或善良風俗或其他不法之文字。</dd>
+                                    <dd>c)強烈政治、宗教色彩的偏激言論。</dd>
+                                    <dd>d)未經本公司許可，不得利用本服務或本網站所提供其他資源，包括但不限於圖文資料庫、編寫製作網頁之軟體等，從事任何商業交易行為，或招攬廣告商或贊助人。</dd>
+                                    <dd>e)其他違反本站「會員服務條款」的內容。</dd>
+                                </div>
+                            </dl>
+                        </ul>
+                        <h1> 六、終止授權</h1>
+                        <ul>
+                            <p>您使用本服務之行為若有任何違反法令或本使用條款或危害本網站或第三者權益之虞時，本公司有權不經告知您，立即暫時或永久終止您使用本服務之授權。</p>
+                        </ul>
+                        <h1>七、修改權</h1>
+                        <ul>
+                            <li>當您開始使用本服務時，即表示您已充分閱讀、瞭解與同意接受本條款之內容。本公司有權於任何時間修改與變更本條款之內容，並將不個別通知會員，建議您定期查閱本服務條款。如您於本條款修改與變更後仍繼續使用本服務，則視為您已閱讀、瞭解與同意接受本條款修改或變更。</li>
+                            <li>本公司有權暫時或永久修改或中止提供本服務給您，您不得因此要求任何賠償。</li>
+                        </ul>
+                        <h1>八、智慧財產權的保護</h1>
+                        <ul>
+                            <li>本網站所使用之軟體、程式及網站上所有內容，包括但不限於著作、圖片、檔案、資訊、資料、網站架構、網頁設計，均由本網站或其他權利人依法擁有其智慧財產權，包括但不限於商標權、專利權、著作權、營業秘密與專有技術等。</li>
+                            <li>任何人不得逕行使用、修改、重製、公開播送、改作、散布、發行、公開發表、進行還原工程、解編或反向組譯。如欲引用或轉載前述之軟體、程式或網站內容，必須依法取得本網站或其他權利人的事前書面同意。如有違反之情事，您應對本網站或其他權利人負損害賠償責任（包括但不限於訴訟費用及律師費用等）。</li>
+                        </ul>
+                        <h1>九、其他規定</h1>
+                        <ul>
+                            <li>本網站使用者條約，免責之內容，亦構成本使用條款之一部分。</li>
+                            <li>凡因使用本服務所生之爭執，均以台灣臺中地方法院為第一審管轄法院。</li>
+                            <li>若因您使用本服務之任何行為，導致本公司遭第三人或行政機關之調查或追訴時，本公司有權向您請求損害賠償，包括但不限於訴訟費用、律師費及商譽損失等。</li>
+                            <li>本公司針對可預知之軟硬體維護工作，有可能導致系統中斷或是暫停者，將會於該狀況發生前，以適當之方式告知會員。</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 </div>
 <!--JS -->
